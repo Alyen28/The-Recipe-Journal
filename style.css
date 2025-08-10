@@ -1,0 +1,29 @@
+.title {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.recipes-container {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.recipes-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.recipes-content {
+    display: inline;
+    margin: 1em;
+    padding: 0;
+}
+
+img {
+    max-width: 40%;
+    max-height: auto;
+}
