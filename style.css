@@ -4,6 +4,12 @@
     justify-content: center;
 }
 
+.subtitle {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
 .recipes-container {
     display: flex;
     text-align: center;
