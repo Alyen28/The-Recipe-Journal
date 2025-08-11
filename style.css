@@ -1,13 +1,20 @@
-.title {
-    display: flex;
-    text-align: center;
-    justify-content: center;
+/* STYLE SECTIONINGS */
+* {
+    margin: 0;
+    padding: 0;
 }
 
+body {
+    background-color: #fce9e0;
+    font-family: "Asap Condensed", sans-serif;
+}
+/* STYLE TEXT */
 .subtitle {
     display: flex;
     text-align: center;
     justify-content: center;
+    position: relative;
+    bottom: 400px;
 }
 
 .recipes-container {
@@ -15,21 +22,86 @@
     text-align: center;
     justify-content: center;
     flex-wrap: wrap;
+    position: relative;
+    bottom: 400px;
+    margin-top: 1em;
+    margin-bottom: 2em;
 }
 
 .recipes-list {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
 }
 
 .recipes-content {
     display: inline;
     margin: 1em;
-    padding: 0;
 }
 
-img {
-    max-width: 40%;
-    max-height: auto;
+/* STYLE IMAGES */
+
+/* STYLE NAV BAR */
+nav {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    position: absolute;
+    top: 6px;
+    font-size: 1.4em;
+    justify-content: space-between;
+    margin: 0em 3em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.left-container {
+    font-weight: bold;
+    color: #ece3d4;
+    justify-content: flex-start;
+}
+
+.right-content {
+    display: inline;
+}
+
+.right-content a {
+    text-decoration: none;
+    margin-left: 20px;
+    color: #ece3d4;
+}
+
+/* STYLE HERO IMAGE */
+.hero-image {
+    width: 100%;
+    height: auto;
+    background: rgba(0, 0, 0, 0.3); 
+}
+
+.hero-text {
+    color: #ece3d4;
+    font-size: clamp(1.2rem, 2.5vw, 2.2rem);
+    position: relative;
+    top: -430px;
+    margin: 3em;
+    text-shadow: 8px 4px 4px rgb(0 0 0 / 50%);
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.hero-text p {
+    font-size: 1.2em;
+    margin: 0.2em 0em;
+}
+
+/* STYLE BUTTONS */
+.explore-button {
+    font-family: "Asap Condensed", sans-serif;
+    font-size: 0.8em;
+    padding: 0.6em 1.2em;
+    margin-top: 1em;
+    background-color: #ece3d4;
+    color: #271a1b;
+    font-weight: 600;
 }
