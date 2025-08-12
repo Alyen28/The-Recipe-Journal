@@ -2,11 +2,11 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: "Asap Condensed", sans-serif;
 }
 
 body {
-    background-color: #fce9e0;
-    font-family: "Asap Condensed", sans-serif;
+    background-color: #ece3d4;
 }
 /* STYLE TEXT */
 .subtitle {
@@ -14,7 +14,6 @@ body {
     text-align: center;
     justify-content: center;
     position: relative;
-    bottom: 400px;
 }
 
 .recipes-container {
@@ -23,7 +22,6 @@ body {
     justify-content: center;
     flex-wrap: wrap;
     position: relative;
-    bottom: 400px;
     margin-top: 1em;
     margin-bottom: 2em;
 }
@@ -40,68 +38,73 @@ body {
 /* STYLE IMAGES */
 
 /* STYLE NAV BAR */
-nav {
-    list-style-type: none;
-    display: flex;
-    align-items: center;
-    padding: 10px 20px;
-    position: absolute;
-    top: 6px;
+.navbar-container {
+    color: #ece3d4;
+    flex-wrap: wrap;
+    flex: row;
+    display: inline-flex;
+    justify-content: flex-start; 
     font-size: 1.4em;
-    justify-content: space-between;
-    margin: 0em 3em;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
+    overflow: hidden;
+    text-align: right;
+}
+
+.right-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 2% 6%;
+}
+
+.right-list {
+    list-style-type: none;
+    display: inline-flex;
+}
+
+.right-text a {
+    text-decoration: none;
+    color: #ece3d4;
 }
 
 .left-container {
-    font-weight: bold;
-    color: #ece3d4;
-    justify-content: flex-start;
-}
-
-.right-content {
-    display: inline;
-}
-
-.right-content a {
-    text-decoration: none;
-    margin-left: 20px;
-    color: #ece3d4;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 2% 6%;
 }
 
 /* STYLE HERO IMAGE */
+.hero-container {
+    position: relative;
+}
+
 .hero-image {
     width: 100%;
     height: auto;
-    background: rgba(0, 0, 0, 0.3); 
 }
 
-.hero-text {
+.hero-text-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 8% 6%;
     color: #ece3d4;
-    font-size: clamp(1.2rem, 2.5vw, 2.2rem);
-    position: relative;
-    top: -430px;
-    margin: 3em;
-    text-shadow: 8px 4px 4px rgb(0 0 0 / 50%);
-    flex-wrap: wrap;
-    align-items: center;
+    text-shadow: 2px 2px 4px black;
 }
 
-.hero-text p {
-    font-size: 1.2em;
-    margin: 0.2em 0em;
+.hero-title {
+    font-size: clamp(1.8rem, 3.5vw, 4rem);
+}
+
+.hero-subtitle {
+    font-size: clamp(1rem, 3vw, 3rem);
 }
 
 /* STYLE BUTTONS */
 .explore-button {
-    font-family: "Asap Condensed", sans-serif;
-    font-size: 0.8em;
-    padding: 0.6em 1.2em;
-    margin-top: 1em;
-    background-color: #ece3d4;
-    color: #271a1b;
-    font-weight: 600;
+    padding: 0.8em 2em;
+    font-size: clamp(0.4rem, 2vw, 1.8rem);
+    background-color:#ece3d4;
+    border:none;
+    margin: 3% 0;
 }
