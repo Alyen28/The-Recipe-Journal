@@ -1,114 +1,115 @@
 /* STYLE SECTIONINGS */
 * {
-    margin: 0;
-    padding: 0;
-    font-family: "Asap Condensed", sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: "Asap Condensed", sans-serif;
 }
 
 body {
-    background-color: #ece3d4;
+  background-color: #ece3d4;
 }
+
 /* STYLE TEXT */
 .subtitle {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    position: relative;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  position: relative;
 }
 
 .recipes-container {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    position: relative;
-    margin-top: 1em;
-    margin-bottom: 2em;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+  margin-top: 1em;
+  margin-bottom: 2em;
 }
 
 .recipes-list {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 .recipes-content {
-    display: inline;
-    margin: 1em;
+  display: inline;
+  margin: 1em;
 }
 
 /* STYLE IMAGES */
 
 /* STYLE NAV BAR */
 .navbar-container {
-    color: #ece3d4;
-    flex-wrap: wrap;
-    flex: row;
-    display: inline-flex;
-    justify-content: flex-start; 
-    overflow: hidden;
+  color: #ece3d4;
+  flex-wrap: wrap;
+  flex: row;
+  display: inline-flex;
+  justify-content: flex-start;
+  overflow: hidden;
 }
 
 .right-container {
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin: 2% 14%;
-    font-size: clamp(0.8rem, 2vw, 1.8rem);
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 2% 14%;
+  font-size: clamp(0.8rem, 2vw, 1.8rem);
 }
 
 .right-list {
-    list-style-type: none;
-    display: inline-flex;
-    gap: 4%;
+  list-style-type: none;
+  display: inline-flex;
+  gap: 4%;
 }
 
 .right-text a {
-    text-decoration: none;
-    color: #ece3d4;
+  text-decoration: none;
+  color: #ece3d4;
 }
 
 .left-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin: 2% 6%;
-    font-size: clamp(0.8rem, 2vw, 1.8rem);
-    font-weight: 600;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 2% 6%;
+  font-size: clamp(0.8rem, 2vw, 1.8rem);
+  font-weight: 600;
 }
 
 /* STYLE HERO IMAGE */
 .hero-container {
-    position: relative;
+  position: relative;
 }
 
 .hero-image {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 .hero-text-container {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    margin: 6% 6%;
-    color: #ece3d4;
-    text-shadow: 2px 2px 4px black;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 6% 6%;
+  color: #ece3d4;
+  text-shadow: 2px 2px 4px black;
 }
 
 .hero-title {
-    font-size: clamp(1.2rem, 3.5vw, 4rem);
+  font-size: clamp(1.2rem, 3.5vw, 4rem);
 }
 
 .hero-subtitle {
-    font-size: clamp(1rem, 3vw, 3rem);
+  font-size: clamp(1rem, 3vw, 3rem);
 }
 
 /* STYLE BUTTONS */
 .explore-button {
-    padding: 0.7em 1.7em;
-    font-size: clamp(0.8rem, 2vw, 2rem);
-    background-color:#ece3d4;
-    border:none;
-    margin: 3% 0;
-    font-weight: 600;
-    color: #2b2122;
+  padding: 0.7em 1.7em;
+  font-size: clamp(0.8rem, 2vw, 2rem);
+  background-color: #ece3d4;
+  border: none;
+  margin: 3% 0;
+  font-weight: 600;
+  color: #2b2122;
 }
