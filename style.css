@@ -1,4 +1,8 @@
 /* STYLE SECTIONINGS */
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -10,11 +14,52 @@ body {
 }
 
 /* STYLE TEXT */
-.subtitle {
+#breakfast-recipes {
   display: flex;
   text-align: center;
   justify-content: center;
   position: relative;
+  color: #2f2021;
+}
+
+#lunch-recipes {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  position: relative;
+  color: #2f2021;
+}
+
+#dinner-recipes {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  position: relative;
+  color: #2f2021;
+}
+
+#dessert-recipes {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  position: relative;
+  color: #2f2021;
+}
+
+#snacks-recipes {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  position: relative;
+  color: #2f2021;
+}
+
+#conversor-container {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  position: relative;
+  color: #2f2021;
 }
 
 .recipes-container {
@@ -111,5 +156,5 @@ body {
   border: none;
   margin: 3% 0;
   font-weight: 600;
-  color: #2b2122;
+  color: #2f2021;
 }

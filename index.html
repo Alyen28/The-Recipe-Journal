@@ -25,12 +25,12 @@
                     </div>
                     <div class="right-container">
                         <ul class="right-list">
-                            <li class="right-text"><a href="breakfast.html">Breakfast/Brunch</a></li>
-                            <li class="right-text"><a href="lunch.html">Lunch</a></li>
-                            <li class="right-text"><a href="dinner.html">Dinner</a></li>
-                            <li class="right-text"><a href="dessert.html">Dessert</a></li>
-                            <li class="right-text"><a href="snacks.html">Snacks</a></li>
-                            <li class="right-text"><a href="conversor.html">Conversor</a></li>
+                            <li class="right-text"><a href="#breakfast-recipes">Breakfast/Brunch</a></li>
+                            <li class="right-text"><a href="#lunch-recipes">Lunch</a></li>
+                            <li class="right-text"><a href="#dinner-recipes">Dinner</a></li>
+                            <li class="right-text"><a href="#dessert-recipes">Dessert</a></li>
+                            <li class="right-text"><a href="#snacks-recipes">Snacks</a></li>
+                            <li class="right-text"><a href="#conversor-container">Conversor</a></li>
                         </ul>
                     </div>
                 </nav>
@@ -38,7 +38,7 @@
             <div class="hero-text-container">
                 <h1 class="hero-title">How can we satisfy your hunger today?</h1>
                 <p class="hero-subtitle">Find the right recipe for you!</p>
-                <button class="explore-button">Explore</button>
+                <a href="#breakfast-recipes"><button class="explore-button">Explore</button></a>
             </div>
         </header>
     </div>
@@ -46,7 +46,7 @@
     <main>
 
         <section>
-            <div class="subtitle">
+            <div id="breakfast-recipes">
                 <h1>Breakfast/Brunch</h2>
             </div>
             <div class="recipes-container">
@@ -109,7 +109,7 @@
         </section>
 
         <section>
-            <div class="subtitle">
+            <div id="lunch-recipes">
                 <h1>Lunch</h2>
             </div>
             <div class="recipes-container">
@@ -172,7 +172,7 @@
         </section>
 
         <section>
-            <div class="subtitle">
+            <div id="dinner-recipes">
                 <h1>Dinner</h2>
             </div>
             <div class="recipes-container">
@@ -235,36 +235,112 @@
         </section>
 
         <section>
-            <div class="subtitle">
+            <div id="dessert-recipes">
                 <h1>Dessert</h2>
             </div>
             <div class="recipes-container">
-                <ul class="recipes-list">
-                    <li class="recipes-content"><a href="dessert/apple-pie.html">Apple Pie</a></li>
-                    <li class="recipes-content"><a href="dessert/brigadeiro.html">Brigadeiro</a></li>
-                    <li class="recipes-content"><a href="dessert/brownie.html">Brownie</a></li>
-                    <li class="recipes-content"><a href="dessert/cheesecake.html">Cheesecake</a></li>
-                    <li class="recipes-content"><a href="dessert/pave.html">Pavê</a></li>
-                    <li class="recipes-content"><a href="dessert/pudim.html">Pudim</a></li>
-                </ul>
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 6</div>
+                    <a href="dessert/apple-pie.html"><img src="img1.jpg" style="width:100%"></a>
+                    <div class="text">Apple Pie</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 6</div>
+                    <a href="dessert/brigadeiro.html"><img src="img1.jpg" style="width:100%"></a>
+                    <div class="text">Brigadeiro</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 6</div>
+                    <a href="dessert/brownie.html"><img src="img1.jpg" style="width:100%"></a>
+                    <div class="text">Brownie</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 6</div>
+                    <a href="dessert/cheesecake.html"><img src="img1.jpg" style="width:100%"></a>
+                    <div class="text">Cheesecake</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">5 / 6</div>
+                    <a href="dessert/pave.html"><img src="img1.jpg" style="width:100%"></a>
+                    <div class="text">Pavê</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">6 / 6</div>
+                    <a href="dessert/pudim.html"><img src="img1.jpg" style="width:100%"></a>
+                    <div class="text">Pudim</div>
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
             </div>
         </section>
 
         <section>
-            <div class="subtitle">
+            <div id="snacks-recipes">
                 <h1>Snacks</h2>
             </div>
             <div class="recipes-container">
-                <ul class="recipes-list">
-                    <li class="recipes-content"><a href="snacks/bruschetta.html">Bruschetta</a></li>
-                    <li class="recipes-content"><a href="snacks/chicken-wings.html">Chicken Wings</a></li>
-                    <li class="recipes-content"><a href="snacks/coxinha.html">Coxinha</a></li>
-                    <li class="recipes-content"><a href="snacks/deviled-eggs.html">Deviled Eggs</a></li>
-                    <li class="recipes-content"><a href="snacks/nachos.html">Nachos</a></li>
-                    <li class="recipes-content"><a href="snacks/pastel.html">Pastel</a></li>
-                </ul>
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 6</div>
+                    <a href="snacks/bruschetta.html"><img src="img1.jpg" style="width:100%"></a>
+                    <div class="text">Bruschetta</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 6</div>
+                    <a href="snacks/chicken-wings.html"><img src="img1.jpg" style="width:100%"></a>
+                    <div class="text">Chicken Wings</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 6</div>
+                    <a href="snacks/coxinha.html"><img src="img1.jpg" style="width:100%"></a>
+                    <div class="text">Coxinha</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 6</div>
+                    <a href="snacks/deviled-eggs.html"><img src="img1.jpg" style="width:100%"></a>
+                    <div class="text">Deviled Eggs</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">5 / 6</div>
+                    <a href="snacks/nachos.html"><img src="img1.jpg" style="width:100%"></a>
+                    <div class="text">Nachos</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">6 / 6</div>
+                    <a href="snacks/pastel.html"><img src="img1.jpg" style="width:100%"></a>
+                    <div class="text">Pastel</div>
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
             </div>
+            <br>
+
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+            </div>
+
         </section>
+            
+        <section>
+            <div id="conversor-container"><h1>Conversor</h1></div>
+        </section>
+
     </main>
 
     <footer>
