@@ -105,6 +105,11 @@ body {
   margin: 3% 6.5%;
 }
 
+img {
+  width: 50%;
+  height: auto;
+}
+
 /* STYLE NAV BAR */
 .navbar-container {
   color: #ece3d4;

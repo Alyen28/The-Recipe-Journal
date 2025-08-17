@@ -30,6 +30,20 @@ function showSlides(n, no) {
     slides[i].style.display = "none";
   }
   slides[slideIndices[no] - 1].style.display = "block";
+  const dotClass = [
+    "dot-breakfast",
+    "dot-lunch",
+    "dot-dinner",
+    "dot-dessert",
+    "dot-snacks",
+  ][no];
+  let dots = document.getElementsByClassName(dotClass);
+  for (let i = 0; i < dots.length; i++) {
+    dots[i].classList.remove("active");
+  }
+  if (dots.length > 0) {
+    dots[slideIndices[no] - 1].classList.add("active");
+  }
 }
 
 // Dot navigation
