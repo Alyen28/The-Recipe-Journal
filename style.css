@@ -63,13 +63,9 @@ body {
 }
 
 .recipes-container {
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  flex-wrap: wrap;
+  max-width: 1000px;
   position: relative;
-  margin-top: 1em;
-  margin-bottom: 2em;
+  margin: auto;
 }
 
 .recipes-list {
@@ -81,7 +77,33 @@ body {
   margin: 1em;
 }
 
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  position: relative;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
 /* STYLE IMAGES */
+.breakfastSlides,
+.lunchSlides,
+.dinnerSlides,
+.dessertSlides,
+.snackSlides {
+  display: none;
+  margin: 3% 6.5%;
+}
 
 /* STYLE NAV BAR */
 .navbar-container {
@@ -97,7 +119,7 @@ body {
   position: absolute;
   top: 0;
   right: 0;
-  margin: 2% 14%;
+  margin: 2% 14.8%;
   font-size: clamp(0.8rem, 2vw, 1.8rem);
 }
 
@@ -120,6 +142,8 @@ body {
   font-size: clamp(0.8rem, 2vw, 1.8rem);
   font-weight: 600;
 }
+
+/* STYTLE FOOTER */
 
 /* STYLE HERO IMAGE */
 .hero-container {
@@ -157,4 +181,64 @@ body {
   margin: 3% 0;
   font-weight: 600;
   color: #2f2021;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  margin-left: 6.5%;
+  margin-right: 6.5%;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0px 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* STYLE ANIMATION */
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
