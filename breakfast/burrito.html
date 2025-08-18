@@ -9,7 +9,7 @@
   </head>
   <body>
     <a href="../index.html">Home</a>
-    <h1>Breakfast Burritos</h1>
+    <h1>Burritos</h1>
     <img src="../assets/breakfast/breakfast-burrito.jpg" />
     <p>A large batch of mexican-inspired breakfast burritos!</p>
     <h2>Ingredients</h2>
@@ -71,5 +71,41 @@
       <li>Heat burritos in the microwave until hot, 3 to 4 minutes.</li>
       <li>Serve and enjoy!</li>
     </ol>
+
+    <section>
+      <div id="conversor-container">
+        <h1 class="recipes-title">Conversor</h1>
+      </div>
+      <div id="conversor">
+        <div id="conversor-child">
+          <label for="fromUnit">From:</label>
+          <select id="fromUnit">
+            <option value="g">Grams (g)</option>
+            <option value="ml">Milliliters (ml)</option>
+            <option value="cup">Cups</option>
+            <option value="tbsp">Tablespoons (tbsp)</option>
+            <option value="tsp">Teaspoons (tsp)</option>
+            <option value="oz">Ounces (oz)</option>
+            <option value="lb">Pounds (lb)</option>
+          </select>
+        </div>
+
+        <div id="conversor-child">
+          <label for="toUnit">To:</label>
+          <select id="toUnit">
+            <option value="g">Grams (g)</option>
+            <option value="ml">Milliliters (ml)</option>
+            <option value="cup">Cups</option>
+            <option value="tbsp">Tablespoons (tbsp)</option>
+            <option value="tsp">Teaspoons (tsp)</option>
+            <option value="oz">Ounces (oz)</option>
+            <option value="lb">Pounds (lb)</option>
+          </select>
+        </div>
+      </div>
+      <div id="conversor-result">
+        <h2 style="color: #392925">Result:</h2>
+      </div>
+    </section>
   </body>
 </html>

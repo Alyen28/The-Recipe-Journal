@@ -13,13 +13,31 @@ body {
   background-color: #ece3d4;
 }
 
+#conversor {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 2%;
+  font-size: clamp(0.8rem, 2vw, 1.8rem);
+}
+
+#conversor-child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 2%;
+}
+
 /* STYLE TEXT */
 #breakfast-recipes {
   display: flex;
   text-align: center;
   justify-content: center;
   position: relative;
-  color: #2f2021;
+  color: #392925;
+  margin-top: 5%;
 }
 
 #lunch-recipes {
@@ -28,6 +46,7 @@ body {
   justify-content: center;
   position: relative;
   color: #2f2021;
+  margin-top: 5%;
 }
 
 #dinner-recipes {
@@ -36,6 +55,7 @@ body {
   justify-content: center;
   position: relative;
   color: #2f2021;
+  margin-top: 5%;
 }
 
 #dessert-recipes {
@@ -44,6 +64,7 @@ body {
   justify-content: center;
   position: relative;
   color: #2f2021;
+  margin-top: 5%;
 }
 
 #snacks-recipes {
@@ -52,6 +73,7 @@ body {
   justify-content: center;
   position: relative;
   color: #2f2021;
+  margin-top: 5%;
 }
 
 #conversor-container {
@@ -60,6 +82,7 @@ body {
   justify-content: center;
   position: relative;
   color: #2f2021;
+  margin-top: 5%;
 }
 
 .recipes-container {
@@ -78,21 +101,36 @@ body {
 }
 
 .text {
-  color: #f2f2f2;
+  color: #ece3d4;
   font-size: 15px;
   position: relative;
   width: 100%;
   text-align: center;
   justify-content: center;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: #945656;
+  font-size: clamp(0.8rem, 2vw, 1.8rem);
 }
 
 .numbertext {
-  color: #f2f2f2;
+  color: #ece3d4;
   font-size: 12px;
   padding: 8px 12px;
   position: absolute;
   top: 0;
+}
+
+.recipes-title {
+  font-size: clamp(1.2rem, 4vw, 2.8rem);
+  color: #392925;
+  text-align: center;
+  margin-bottom: 2%;
+}
+
+#conversor-result {
+  font-size: clamp(0.8rem, 2vw, 1.4rem);
+  text-align: center;
+  margin-bottom: 5%;
+  margin-top: 5%;
 }
 
 /* STYLE IMAGES */
@@ -102,7 +140,8 @@ body {
 .dessertSlides,
 .snackSlides {
   display: none;
-  margin: 3% 6.5%;
+  margin-left: 6.5%;
+  margin-right: 6.5%;
 }
 
 img {
@@ -185,7 +224,17 @@ img {
   border: none;
   margin: 3% 0;
   font-weight: 600;
-  color: #2f2021;
+  color: #392925;
+  border-radius: 5px;
+  border: 1px solid #ceb5af;
+  transition-duration: 0.4s;
+}
+
+.explore-button:hover {
+  padding: 0.8em 1.8em;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  font-size: clamp(0.82rem, 2vw, 3rem);
 }
 
 .prev,
@@ -213,7 +262,7 @@ img {
 
 .prev:hover,
 .next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .dot {
@@ -221,7 +270,7 @@ img {
   height: 15px;
   width: 15px;
   margin: 0px 2px;
-  background-color: #bbb;
+  background-color: #ceb5af;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
@@ -229,7 +278,17 @@ img {
 
 .active,
 .dot:hover {
-  background-color: #717171;
+  background-color: #a75959;
+}
+
+select {
+  padding: 0.5em;
+  font-size: clamp(0.8rem, 2vw, 1.4rem);
+  border-radius: 5px;
+  border: 1px solid #ceb5af;
+  background-color: #ece3d4;
+  color: #392925;
+  cursor: pointer;
 }
 
 /* STYLE ANIMATION */
