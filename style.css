@@ -1,4 +1,4 @@
-/* STYLE SECTIONINGS */
+/* STYLE MAIN PAGE SECTIONINGS */
 html {
   scroll-behavior: smooth;
 }
@@ -13,75 +13,16 @@ body {
   background-color: #ece3d4;
 }
 
-#conversor {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  margin: 2%;
-  font-size: clamp(0.8rem, 2vw, 1.8rem);
-}
-
-#conversor-child {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 0 2%;
-}
-
-/* STYLE TEXT */
-#breakfast-recipes {
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  position: relative;
-  color: #392925;
-  margin-top: 5%;
-}
-
-#lunch-recipes {
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  position: relative;
-  color: #2f2021;
-  margin-top: 5%;
-}
-
-#dinner-recipes {
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  position: relative;
-  color: #2f2021;
-  margin-top: 5%;
-}
-
-#dessert-recipes {
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  position: relative;
-  color: #2f2021;
-  margin-top: 5%;
-}
-
+#breakfast-recipes,
+#lunch-recipes,
+#dinner-recipes,
+#dessert-recipes,
 #snacks-recipes {
   display: flex;
   text-align: center;
   justify-content: center;
   position: relative;
-  color: #2f2021;
-  margin-top: 5%;
-}
-
-#conversor-container {
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  position: relative;
-  color: #2f2021;
+  color: #392925;
   margin-top: 5%;
 }
 
@@ -91,15 +32,7 @@ body {
   margin: auto;
 }
 
-.recipes-list {
-  list-style-type: none;
-}
-
-.recipes-content {
-  display: inline;
-  margin: 1em;
-}
-
+/* STYLE MAIN PAGE TEXT */
 .text {
   color: #ece3d4;
   font-size: 15px;
@@ -126,14 +59,7 @@ body {
   margin-bottom: 2%;
 }
 
-#conversor-result {
-  font-size: clamp(0.8rem, 2vw, 1.4rem);
-  text-align: center;
-  margin-bottom: 5%;
-  margin-top: 5%;
-}
-
-/* STYLE IMAGES */
+/* STYLE SLIDE IMAGES */
 .breakfastSlides,
 .lunchSlides,
 .dinnerSlides,
@@ -144,12 +70,7 @@ body {
   margin-right: 6.5%;
 }
 
-img {
-  width: 50%;
-  height: auto;
-}
-
-/* STYLE NAV BAR */
+/* STYLE MAIN NAV BAR */
 .navbar-container {
   color: #ece3d4;
   flex-wrap: wrap;
@@ -187,8 +108,6 @@ img {
   font-weight: 600;
 }
 
-/* STYTLE FOOTER */
-
 /* STYLE HERO IMAGE */
 .hero-container {
   position: relative;
@@ -216,7 +135,7 @@ img {
   font-size: clamp(1rem, 3vw, 3rem);
 }
 
-/* STYLE BUTTONS */
+/* STYLE MAIN PAGE BUTTONS */
 .explore-button {
   padding: 0.7em 1.7em;
   font-size: clamp(0.8rem, 2vw, 2rem);
@@ -291,8 +210,7 @@ select {
   cursor: pointer;
 }
 
-/* STYLE ANIMATION */
-
+/* STYLE ANIMATIONS */
 .fade {
   animation-name: fade;
   animation-duration: 1.5s;
@@ -305,4 +223,80 @@ select {
   to {
     opacity: 1;
   }
+}
+
+/* STYTLE FOOTER */
+
+/* STYLE RECIPE PAGES SECTIONINGS */
+main {
+  margin: 2% 6%;
+  font-family: "Asap Condensed", sans-serif;
+}
+
+.intro-recipe {
+  margin-top: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#conversor-container {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  position: relative;
+  color: #2f2021;
+  margin-top: 5%;
+}
+
+#conversor {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 2%;
+  font-size: clamp(0.8rem, 2vw, 1.8rem);
+}
+
+#conversor-child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 2%;
+}
+
+/* STYLE RECIPE PAGES TEXT */
+#conversor-result {
+  font-size: clamp(0.8rem, 2vw, 1.4rem);
+  text-align: center;
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
+
+.intro-title {
+  font-size: clamp(1.2rem, 3.5vw, 4rem);
+  color: #392925;
+  text-align: center;
+  margin-bottom: 2%;
+}
+
+.intro-subtitle {
+  font-size: clamp(1rem, 3vw, 2rem);
+  color: #392925;
+  text-align: center;
+  margin-top: 2%;
+  margin-bottom: 5%;
+}
+
+a {
+  text-decoration: none;
+  color: #392925;
+}
+
+/* STYLE RECIPE PAGES IMAGES */
+img {
+  width: 60%;
+  height: auto;
 }
