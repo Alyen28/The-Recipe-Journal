@@ -43,19 +43,18 @@
         <div class="hero-text-container">
           <h1 class="hero-title">How can we satisfy your hunger today?</h1>
           <p class="hero-subtitle">Find the right recipe for you!</p>
-          <a href="#breakfast-recipes"
-            ><button class="explore-button">Explore</button></a
-          >
+          <a href="#main"><button class="explore-button">Explore</button></a>
         </div>
       </header>
     </div>
 
-    <main>
+    <main id="main">
       <section>
-        <div id="breakfast-recipes">
-          <h1 class="recipes-title">Breakfast/Brunch</h1>
-        </div>
-        <div class="recipes-container">
+        <div style="margin-top: 8%" class="recipes-container">
+          <div id="breakfast-recipes">
+            <h1 class="recipes-title">Breakfast/Brunch</h1>
+          </div>
+
           <div class="breakfastSlides fade">
             <div class="numbertext">1 / 8</div>
             <a href="breakfast/burrito.html"
@@ -137,10 +136,10 @@
       </section>
 
       <section>
-        <div id="lunch-recipes">
-          <h1 class="recipes-title">Lunch</h1>
-        </div>
         <div class="recipes-container">
+          <div id="lunch-recipes">
+            <h1 class="recipes-title">Lunch</h1>
+          </div>
           <div class="lunchSlides fade">
             <div class="numbertext">1 / 8</div>
             <a href="lunch/casserole.html"
@@ -216,10 +215,10 @@
       </section>
 
       <section>
-        <div id="dinner-recipes">
-          <h1 class="recipes-title">Dinner</h1>
-        </div>
         <div class="recipes-container">
+          <div id="dinner-recipes">
+            <h1 class="recipes-title">Dinner</h1>
+          </div>
           <div class="dinnerSlides fade">
             <div class="numbertext">1 / 8</div>
             <a href="dinner/baked-salmon.html"
@@ -297,10 +296,10 @@
       </section>
 
       <section>
-        <div id="dessert-recipes">
-          <h1 class="recipes-title">Dessert</h1>
-        </div>
         <div class="recipes-container">
+          <div id="dessert-recipes">
+            <h1 class="recipes-title">Dessert</h1>
+          </div>
           <div class="dessertSlides fade">
             <div class="numbertext">1 / 6</div>
             <a href="dessert/apple-pie.html"
@@ -360,10 +359,10 @@
       </section>
 
       <section>
-        <div id="snacks-recipes">
-          <h1 class="recipes-title">Snacks</h1>
-        </div>
         <div class="recipes-container">
+          <div id="snacks-recipes">
+            <h1 class="recipes-title">Snacks</h1>
+          </div>
           <div class="snackSlides fade">
             <div class="numbertext">1 / 6</div>
             <a href="snacks/bruschetta.html"
@@ -423,7 +422,22 @@
       </section>
     </main>
 
-    <footer></footer>
+    <div class="footer-container">
+      <div class="newsletter-content">
+        <h2 class="newsletter-title">Subscribe to our newsletter</h2>
+        <form class="newsletter-form">
+          <input
+            type="email"
+            placeholder="Enter your email adress"
+          />
+          <button type="submit" class="newsletter-button">Submit</button>
+      </div>
+    
+      <div class="footer-content">
+        <div><h3>Follow Us</h3></div>
+        <div><h3>Contact</h3></div>
+      </div>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
