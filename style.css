@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  background-color: #392925;
+  background-color: #4b332d;
 }
 
 .secondary-body {
@@ -40,7 +40,7 @@ body {
   background-color: #ece3d4;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  margin-top: 5%;
+  margin-top: 3%;
 }
 
 /* STYLE MAIN PAGE TEXT */
@@ -53,16 +53,8 @@ body {
   justify-content: center;
   background-color: #945656;
   font-size: clamp(0.8rem, 2vw, 1.8rem);
-  margin-bottom: 2%;
+  margin-bottom: 3%;
   padding: 8px 0;
-}
-
-.numbertext {
-  color: #ece3d4;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
 }
 
 .recipes-title {
@@ -97,7 +89,7 @@ body {
   position: absolute;
   top: 0;
   right: 0;
-  margin: 2% 14.8%;
+  margin: 2% 12%;
   font-size: clamp(0.8rem, 2vw, 1.8rem);
 }
 
@@ -110,6 +102,12 @@ body {
 .right-text a {
   text-decoration: none;
   color: #ece3d4;
+  transition-duration: 0.4s;
+}
+
+.right-text a:hover {
+  color: #ceb5af;
+  transition-duration: 0.4s;
 }
 
 .left-container {
@@ -153,20 +151,22 @@ body {
   padding: 0.7em 1.7em;
   font-size: clamp(0.8rem, 2vw, 2rem);
   background-color: #ece3d4;
-  border: none;
   margin: 3% 0;
   font-weight: 600;
   color: #392925;
   border-radius: 5px;
-  border: 1px solid #ceb5af;
+  border: 2px solid #ece3d4;
   transition-duration: 0.4s;
 }
 
 .explore-button:hover {
-  padding: 0.8em 1.8em;
   cursor: pointer;
-  transition-duration: 0.4s;
+  padding: 0.8em 1.8em;
   font-size: clamp(0.82rem, 2vw, 3rem);
+  background-color: #392925;
+  color: #ece3d4;
+  border: 2px solid #ece3d4;
+  transition-duration: 0.4s;
 }
 
 .prev,
@@ -211,17 +211,7 @@ body {
 
 .active,
 .dot:hover {
-  background-color: #a75959;
-}
-
-select {
-  padding: 0.5em;
-  font-size: clamp(0.8rem, 2vw, 1.4rem);
-  border-radius: 5px;
-  border: 1px solid #ceb5af;
-  background-color: #ece3d4;
-  color: #392925;
-  cursor: pointer;
+  background-color: #945656;
 }
 
 /* STYLE ANIMATIONS */
@@ -267,7 +257,7 @@ select {
 
 /* STYLE RECIPE PAGES SECTIONINGS */
 main {
-  margin: 2% 8%;
+  margin: 2% 10%;
 }
 
 .intro-recipe {
@@ -275,21 +265,14 @@ main {
   flex-direction: column;
   align-items: left;
   justify-content: left;
-  max-width: 80%;
-  margin-top: 10%;
-  padding: 20px;
-  background-color: #ece3d4;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-top: 12%;
 }
 
 #conversor-container {
+  margin-bottom: 3%;
+  color: #392925;
   display: flex;
-  text-align: left;
-  justify-content: left;
-  position: relative;
-  color: #2f2021;
-  margin-top: 5%;
+  flex-direction: column;
 }
 
 #conversor {
@@ -297,8 +280,6 @@ main {
   flex-direction: row;
   align-items: left;
   justify-content: left;
-  margin: 2%;
-  font-size: clamp(0.8rem, 2vw, 1.8rem);
 }
 
 #conversor-child {
@@ -306,20 +287,30 @@ main {
   flex-direction: column;
   align-items: left;
   justify-content: left;
-  margin: 0 2%;
+  margin-right: 4%;
 }
 
-.ingredients-container {
-  font-size: clamp(1rem, 3vw, 2rem);
+.solid {
+  border-top: 2px solid;
+  color: #945656;
+  margin-right: 30%;
+  margin-top: 5%;
 }
 
-.steps-container {
-  font-size: clamp(1rem, 3vw, 2rem);
+.right-text0 {
+  text-decoration: none;
+  color: #392925;
+  transition-duration: 0.4s;
+}
+
+.right-text0:hover {
+  color: #945656;
+  transition-duration: 0.4s;
 }
 
 /* STYLE RECIPE PAGES TEXT */
 .intro-title {
-  font-size: clamp(1.2rem, 3.5vw, 4rem);
+  font-size: clamp(2.8rem, 3.2vw, 3.6rem);
   color: #392925;
   text-align: left;
   margin-bottom: 2%;
@@ -327,55 +318,80 @@ main {
 
 .intro-subtitle {
   font-size: clamp(1rem, 3vw, 2rem);
-  color: #392925;
+  color: #ece3d4;
   text-align: left;
-  margin-top: 2%;
+  margin-top: 1%;
   margin-bottom: 2%;
-}
-
-a {
-  text-decoration: none;
-  color: #392925;
+  background-color: #945656;
+  margin-right: 30%;
+  padding: 8px 10px;
 }
 
 .ingredients-title {
-  font-size: clamp(1.2rem, 3vw, 4rem);
-  margin-top: 3%;
+  font-size: clamp(1.2rem, 4vw, 3.2rem);
+  margin-top: 4%;
   color: #392925;
 }
 
-.ingredients-container p {
-  margin-bottom: 2%;
-  font-size: clamp(0.8rem, 3vw, 1.6rem);
+.ingredients-subtitle {
+  font-size: clamp(0.4rem, 2vw, 1.6rem);
+  margin-bottom: 3%;
 }
 
 .ingredients-container li {
-  margin-left: 3%;
+  margin-left: 4%;
   margin-bottom: 1%;
-  margin-right: 10%;
+  margin-right: 36%;
+  font-size: clamp(1rem, 3vw, 2rem);
 }
 
 .steps-title {
-  font-size: clamp(1.2rem, 3vw, 4rem);
-  margin-bottom: 2%;
+  font-size: clamp(1.2rem, 4vw, 3.2rem);
+  margin-bottom: 3%;
   margin-top: 4%;
   color: #392925;
 }
 
 .steps-container li {
-  margin-left: 3%;
+  margin-left: 4%;
   margin-bottom: 1%;
-  margin-right: 20%;
+  margin-right: 36%;
+  font-size: clamp(1rem, 3vw, 2rem);
 }
 
-.conversor-container p {
+#conversor-title {
+  font-size: clamp(1rem, 3vw, 2.4rem);
+  margin-top: 5%;
+  margin-bottom: 3%;
+  color: #392925;
+}
+
+input {
+  padding: 0.6em;
+  font-size: clamp(0.8rem, 2vw, 1.4rem);
+  border-radius: 0 0 5px 5px;
+}
+
+#conversor p {
   position: relative;
-  align-items: center;
-  justify-content: center;
+  margin-top: 3%;
+  margin-right: 4%;
+  font-size: clamp(0.8rem, 3vw, 2rem);
 }
 
 /* STYLE RECIPE PAGES IMAGES */
 img {
-  width: 80%;
+  width: 70%;
   height: auto;
+}
+
+/* STYLE RECIPE PAGES BUTTONS */
+select {
+  padding: 0.4em;
+  font-size: clamp(0.8rem, 2vw, 1.4rem);
+  border-radius: 5px 5px 0 0;
+  border: 1px solid #ceb5af;
+  background-color: #ece3d4;
+  color: #392925;
+  cursor: pointer;
 }
