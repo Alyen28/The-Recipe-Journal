@@ -50,3 +50,50 @@ function showSlides(n, no) {
 function currentSlide(n, no) {
   showSlides((slideIndices[no] = n), no);
 }
+
+const volumeFactors = {
+  ml: 1,
+  cup: 240,
+  tbsp: 15,
+  tsp: 5,
+  oz: 29.5735,
+};
+
+const weightFactors = {
+  g: 1,
+  lb: 453.592,
+  oz: 28.3495,
+};
+
+const fromUnit = document.getElementById("fromUnit");
+const toUnit = document.getElementById("toUnit");
+const inputs = document.querySelectorAll("#conversor-child input");
+
+if (fromUnit && toUnit && inputs.length >= 2) {
+  inputs[0].addEventListener("input", convert);
+  fromUnit.addEventListener("change", convert);
+  toUnit.addEventListener("change", convert);
+}
+
+function convert() {
+  const value = parseFloat(inputs[0].value);
+  const from = fromUnit.value;
+  const to = toUnit.value;
+
+  if (isNaN(value) || !from || !to) {
+    inputs[1].value = "";
+    return;
+  }
+
+  if (volumeFactors[from] && volumeFactors[to]) {
+    const valueInML = value * volumeFactors[from];
+    const result = valueInML / volumeFactors[to];
+    inputs[1].value = result;
+  } else if (weightFactors[from] && weightFactors[to]) {
+    const valueInG = value * weightFactors[from];
+    const result = valueInG / weightFactors[to];
+    inputs[1].value = result;
+  } else {
+    inputs[1].value = "N/A";
+  }
+}
