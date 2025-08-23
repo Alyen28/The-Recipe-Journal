@@ -120,7 +120,7 @@ body {
 }
 
 /* STYLE HERO IMAGE */
-.hero-container {
+#hero-container {
   position: relative;
 }
 
@@ -233,110 +233,88 @@ body {
 .footer-container {
   background-color: #945656;
   color: #ece3d4;
-  padding: 2% 0;
-}
-
-form {
   display: flex;
-  gap: 0;
-}
-
-form * {
-  margin: 0;
-  padding: 0;
-}
-
-.newsletter-content {
-  display: flex;
+  padding: 4% 6%;
   flex-direction: row;
-  margin: 2% 10%;
-  gap: 14%;
-}
-
-.newsletter-title {
-  font-size: clamp(1.2rem, 3vw, 2.4rem);
-}
-
-.newsletter-content input {
-  flex: 1;
-  padding: 0.4em 1.2em;
-  font-size: clamp(0.8rem, 2vw, 1.4rem);
-  border: 2px solid #ece3d4;
-  border-right: none;
-  border-radius: 5px 0 0 5px;
-  outline: none;
-  min-width: 120%;
-}
-
-.newsletter-button {
-  padding: 0.4em 1.2em;
-  font-size: clamp(0.8rem, 2vw, 1.4rem);
-  border: 2px solid #ece3d4;
-  border-left: none;
-  border-radius: 0 5px 5px 0;
-  background-color: #ece3d4;
-  color: #392925;
-  cursor: pointer;
-  transition-duration: 0.4s;
-  font-weight: 600;
-}
-
-.newsletter-button:hover {
-  cursor: pointer;
-  background-color: #392925;
-  color: #ece3d4;
-  border: 2px solid #ece3d4;
-  transition-duration: 0.4s;
-}
-
-.footer-content {
-  display: flex;
-  flex-direction: row;
-  align-items: left;
+  justify-content: space-between;
   text-align: left;
-  margin-top: 4%;
+}
+
+.footer-container h3 {
+  font-size: clamp(0.8rem, 2vw, 2.2rem);
   margin-bottom: 4%;
-  margin-left: 10%;
-  margin-right: 10%;
-  gap: 28%;
 }
 
-.footer-content h3 {
-  font-size: clamp(0.8rem, 2vw, 3rem);
-}
-
-.footer-links {
+.footer-main {
+  display: flex;
   flex-direction: column;
+  align-items: left;
+  justify-content: left;
+  max-width: 38%;
+  margin-right: 6%;
 }
 
-.social-icons {
-  flex-direction: row;
+.footer-main h1 {
+  font-size: clamp(1rem, 2vw, 3rem);
+  margin-bottom: 0.6em;
 }
 
-.social-icons i {
-  font-size: clamp(0.8rem, 2vw, 3rem);
-  margin-top: 0.8em;
-  margin-right: 0.5em;
-  color: #ece3d4;
-  transition-duration: 0.4s;
+.footer-main p {
+  margin: 2% 0;
+  max-width: 100%;
 }
 
 .footer-contact {
+  display: flex;
   flex-direction: column;
+  align-items: left;
+  justify-content: left;
+  margin-right: 6%;
 }
 
-.number-contact,
-.email-contact {
-  font-size: clamp(0.8rem, 2vw, 3rem);
-  margin-top: 0.8em;
-  color: #ece3d4;
+.email-contact,
+.number-contact {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4%;
+  margin: 2% 0;
+}
+
+.email-contact i,
+.number-contact i {
+  font-size: clamp(1rem, 2vw, 1.4rem);
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: left;
+  width: 200px;
+}
+
+.social-icons {
+  font-size: clamp(1.2rem, 2vw, 1.4rem);
+  transition-duration: 0.4s;
+  flex-wrap: nowrap;
+}
+
+.social-icons i {
+  margin-right: 2%;
+  transition-duration: 0.4s;
+  display: inline;
+}
+
+.social-icons i:hover {
+  color: #ceb5af;
+  cursor: pointer;
   transition-duration: 0.4s;
 }
 
-.number-contact,
-.email-contact {
-  display: flex;
-  flex-direction: row;
+.copy {
+  margin-top: 7%;
+  font-size: clamp(0.4rem, 1vw, 0.8rem);
 }
 
 /* STYLE RECIPE PAGES SECTIONINGS */
@@ -521,4 +499,62 @@ select {
 select:hover {
   box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.4);
   transition-duration: 0.2s;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 1100px) {
+  .footer-main {
+    max-width: 32%;
+  }
+  .footer-container {
+    padding: 4% 6%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .footer-container {
+    flex-direction: column;
+    gap: 32px;
+    padding: 4% 4%;
+    align-items: flex-start;
+    text-align: left;
+  }
+  .footer-main,
+  .footer-contact,
+  .footer-links {
+    max-width: 100%;
+    margin-right: 0;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .footer-main {
+    margin-bottom: 1em;
+  }
+  .copy {
+    margin-top: 2em;
+    text-align: left;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-container {
+    padding: 4% 4%;
+    gap: 20px;
+  }
+  .footer-main h1 {
+    font-size: 1.4rem;
+  }
+  .footer-main button {
+    width: 100%;
+    font-size: 1rem;
+  }
+  .footer-main,
+  .footer-contact,
+  .footer-links {
+    font-size: 1rem;
+  }
+  .social-icons {
+    font-size: 1.2rem;
+    display: inline;
+  }
 }

@@ -1,425 +1,367 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="style.css" rel="stylesheet" type="text/css" />
-    <title>The Recipe Journal</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Asap+Condensed:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="fontawesome-free-7.0.0-web/css/all.css" />
-  </head>
 
-  <body class="main-body">
-    <div class="hero-container">
-      <header>
-        <img class="hero-image" src="assets/buffet.jpg" />
-        <div class="navbar-container">
-          <nav class="navbar">
-            <div class="left-container">
-              <p class="left-text">The Recipe Journal</p>
-            </div>
-            <div class="right-container">
-              <ul class="right-list">
-                <li class="right-text">
-                  <a href="#breakfast-link">Breakfast/Brunch</a>
-                </li>
-                <li class="right-text"><a href="#lunch-link">Lunch</a></li>
-                <li class="right-text"><a href="#dinner-link">Dinner</a></li>
-                <li class="right-text">
-                  <a href="#dessert-link">Dessert</a>
-                </li>
-                <li class="right-text"><a href="#snacks-link">Snacks</a></li>
-              </ul>
-            </div>
-          </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <title>The Recipe Journal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Asap+Condensed:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="fontawesome-free-7.0.0-web/css/all.css" />
+</head>
+
+<body class="main-body">
+  <div id="hero-container">
+    <header>
+      <img class="hero-image" src="assets/buffet.jpg" />
+      <div class="navbar-container">
+        <nav class="navbar">
+          <div class="left-container">
+            <p class="left-text">The Recipe Journal</p>
+          </div>
+          <div class="right-container">
+            <ul class="right-list">
+              <li class="right-text">
+                <a href="#breakfast-link">Breakfast/Brunch</a>
+              </li>
+              <li class="right-text"><a href="#lunch-link">Lunch</a></li>
+              <li class="right-text"><a href="#dinner-link">Dinner</a></li>
+              <li class="right-text">
+                <a href="#dessert-link">Dessert</a>
+              </li>
+              <li class="right-text"><a href="#snacks-link">Snacks</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="hero-text-container">
+        <h1 class="hero-title">How can we satisfy your hunger today?</h1>
+        <p class="hero-subtitle">Find the right recipe for you!</p>
+        <a href="#breakfast-link"><button class="explore-button">Explore</button></a>
+      </div>
+    </header>
+  </div>
+
+  <main>
+    <section id="breakfast-link">
+      <div style="margin-top: 6%" class="recipes-container">
+        <div id="breakfast-recipes">
+          <h1 class="recipes-title">Breakfast/Brunch</h1>
         </div>
-        <div class="hero-text-container">
-          <h1 class="hero-title">How can we satisfy your hunger today?</h1>
-          <p class="hero-subtitle">Find the right recipe for you!</p>
-          <a href="#breakfast-link"
-            ><button class="explore-button">Explore</button></a
-          >
+
+        <div class="breakfastSlides fade">
+          <a href="breakfast/burrito.html"><img src="assets/breakfast/breakfast-burrito.jpg" style="width: 100%" /></a>
+          <div class="text">Burritos</div>
         </div>
-      </header>
+        <div class="breakfastSlides fade">
+          <a href="breakfast/cuscuz.html"><img src="assets/breakfast/cuscuz.jpg" style="width: 100%" /></a>
+          <div class="text">Cuscuz</div>
+        </div>
+        <div class="breakfastSlides fade">
+          <a href="breakfast/french-toast.html"><img src="assets/breakfast/french-toast.jpg" style="width: 100%" /></a>
+          <div class="text">French Toast</div>
+        </div>
+        <div class="breakfastSlides fade">
+          <a href="breakfast/omelette.html"><img src="assets/breakfast/omelette.jpg" style="width: 100%" /></a>
+          <div class="text">Omelette</div>
+        </div>
+        <div class="breakfastSlides fade">
+          <a href="breakfast/pancakes.html"><img src="assets/breakfast/pancakes.jpg" style="width: 100%" /></a>
+          <div class="text">Pancakes</div>
+        </div>
+        <div class="breakfastSlides fade">
+          <a href="breakfast/scrambled-eggs.html"><img src="assets/breakfast/scrambled-eggs.jpg"
+              style="width: 100%" /></a>
+          <div class="text">Scrambled Eggs</div>
+        </div>
+        <div class="breakfastSlides fade">
+          <a href="breakfast/smoothie-bowl.html"><img src="assets/breakfast/smoothie-bowl.jpg"
+              style="width: 100%" /></a>
+          <div class="text">Smoothie Bowl</div>
+        </div>
+        <div class="breakfastSlides fade">
+          <a href="breakfast/tapioca.html"><img src="assets/breakfast/tapioca.jpg" style="width: 100%" /></a>
+          <div class="text">Tapioca</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+      </div>
+      <br />
+
+      <div style="text-align: center">
+        <span class="dot dot-breakfast" onclick="currentSlide(1, 0)"></span>
+        <span class="dot dot-breakfast" onclick="currentSlide(2, 0)"></span>
+        <span class="dot dot-breakfast" onclick="currentSlide(3, 0)"></span>
+        <span class="dot dot-breakfast" onclick="currentSlide(4, 0)"></span>
+        <span class="dot dot-breakfast" onclick="currentSlide(5, 0)"></span>
+        <span class="dot dot-breakfast" onclick="currentSlide(6, 0)"></span>
+        <span class="dot dot-breakfast" onclick="currentSlide(7, 0)"></span>
+        <span class="dot dot-breakfast" onclick="currentSlide(8, 0)"></span>
+      </div>
+    </section>
+
+    <section id="lunch-link">
+      <div class="recipes-container">
+        <div id="lunch-recipes">
+          <h1 class="recipes-title">Lunch</h1>
+        </div>
+        <div class="lunchSlides fade">
+          <a href="lunch/casserole.html"><img src="assets/lunch/casserole.jpg" style="width: 100%" /></a>
+          <div class="text">Casserole</div>
+        </div>
+        <div class="lunchSlides fade">
+          <a href="lunch/ceasar-salad.html"><img src="assets/lunch/ceasar-salad.jpg" style="width: 100%" /></a>
+          <div class="text">Ceasar Salad</div>
+        </div>
+        <div class="lunchSlides fade">
+          <a href="lunch/chicken-wrap.html"><img src="assets/lunch/chicken-wrap.jpg" style="width: 100%" /></a>
+          <div class="text">Chicken Wrap</div>
+        </div>
+        <div class="lunchSlides fade">
+          <a href="lunch/mac-and-cheese.html"><img src="assets/lunch/mac-and-cheese.jpg" style="width: 100%" /></a>
+          <div class="text">Mac n' Cheese</div>
+        </div>
+        <div class="lunchSlides fade">
+          <a href="lunch/quiche.html"><img src="assets/lunch/quiche.jpg" style="width: 100%" /></a>
+          <div class="text">Quiche</div>
+        </div>
+        <div class="lunchSlides fade">
+          <a href="lunch/sandwich.html"><img src="assets/lunch/sandwich.jpg" style="width: 100%" /></a>
+          <div class="text">Sandwich</div>
+        </div>
+        <div class="lunchSlides fade">
+          <a href="lunch/tomato-soup.html"><img src="assets/lunch/tomato-soup.jpg" style="width: 100%" /></a>
+          <div class="text">Tomato Soup</div>
+        </div>
+        <div class="lunchSlides fade">
+          <a href="lunch/tuna-salad.html"><img src="assets/lunch/tuna-salad.jpg" style="width: 100%" /></a>
+          <div class="text">Tuna Salad</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+      </div>
+      <br />
+
+      <div style="text-align: center">
+        <span class="dot dot-lunch" onclick="currentSlide(1, 1)"></span>
+        <span class="dot dot-lunch" onclick="currentSlide(2, 1)"></span>
+        <span class="dot dot-lunch" onclick="currentSlide(3, 1)"></span>
+        <span class="dot dot-lunch" onclick="currentSlide(4, 1)"></span>
+        <span class="dot dot-lunch" onclick="currentSlide(5, 1)"></span>
+        <span class="dot dot-lunch" onclick="currentSlide(6, 1)"></span>
+        <span class="dot dot-lunch" onclick="currentSlide(7, 1)"></span>
+        <span class="dot dot-lunch" onclick="currentSlide(8, 1)"></span>
+      </div>
+    </section>
+
+    <section id="dinner-link">
+      <div class="recipes-container">
+        <div id="dinner-recipes">
+          <h1 class="recipes-title">Dinner</h1>
+        </div>
+        <div class="dinnerSlides fade">
+          <a href="dinner/baked-salmon.html"><img src="assets/dinner/baked-salmon.jpg" style="width: 100%" /></a>
+          <div class="text">Baked Salmon</div>
+        </div>
+        <div class="dinnerSlides fade">
+          <a href="dinner/beef-stroganoff.html"><img src="assets/dinner/beef-stroganoff.jpg" style="width: 100%" /></a>
+          <div class="text">Beef Stroganoff</div>
+        </div>
+        <div class="dinnerSlides fade">
+          <a href="dinner/chicken-stroganoff.html"><img src="assets/dinner/chicken-stroganoff.jpg"
+              style="width: 100%" /></a>
+          <div class="text">Chicken Stroganoff</div>
+        </div>
+        <div class="dinnerSlides fade">
+          <a href="dinner/chili.html"><img src="assets/dinner/chili.jpg" style="width: 100%" /></a>
+          <div class="text">Chili</div>
+        </div>
+        <div class="dinnerSlides fade">
+          <a href="dinner/feijoada.html"><img src="assets/dinner/feijoada.jpg" style="width: 100%" /></a>
+          <div class="text">Feijoada</div>
+        </div>
+        <div class="dinnerSlides fade">
+          <a href="dinner/lasagna.html"><img src="assets/dinner/lasagna.jpg" style="width: 100%" /></a>
+          <div class="text">Lasagna</div>
+        </div>
+        <div class="dinnerSlides fade">
+          <a href="dinner/moqueca.html"><img src="assets/dinner/moqueca.jpg" style="width: 100%" /></a>
+          <div class="text">Moqueca</div>
+        </div>
+        <div class="dinnerSlides fade">
+          <a href="dinner/spaghetti.html"><img src="assets/dinner/spaghetti.jpg" style="width: 100%" /></a>
+          <div class="text">Spaghetti</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
+      </div>
+      <br />
+
+      <div style="text-align: center">
+        <span class="dot dot-dinner" onclick="currentSlide(1, 2)"></span>
+        <span class="dot dot-dinner" onclick="currentSlide(2, 2)"></span>
+        <span class="dot dot-dinner" onclick="currentSlide(3, 2)"></span>
+        <span class="dot dot-dinner" onclick="currentSlide(4, 2)"></span>
+        <span class="dot dot-dinner" onclick="currentSlide(5, 2)"></span>
+        <span class="dot dot-dinner" onclick="currentSlide(6, 2)"></span>
+        <span class="dot dot-dinner" onclick="currentSlide(7, 2)"></span>
+        <span class="dot dot-dinner" onclick="currentSlide(8, 2)"></span>
+      </div>
+    </section>
+
+    <section id="dessert-link">
+      <div class="recipes-container">
+        <div id="dessert-recipes">
+          <h1 class="recipes-title">Dessert</h1>
+        </div>
+        <div class="dessertSlides fade">
+          <a href="dessert/apple-pie.html"><img src="assets/dessert/apple-pie.jpg" style="width: 100%" /></a>
+          <div class="text">Apple Pie</div>
+        </div>
+        <div class="dessertSlides fade">
+          <a href="dessert/brigadeiro.html"><img src="assets/dessert/brigadeiro.jpg" style="width: 100%" /></a>
+          <div class="text">Brigadeiro</div>
+        </div>
+        <div class="dessertSlides fade">
+          <a href="dessert/brownie.html"><img src="assets/dessert/brownie.jpg" style="width: 100%" /></a>
+          <div class="text">Brownie</div>
+        </div>
+        <div class="dessertSlides fade">
+          <a href="dessert/cheesecake.html"><img src="assets/dessert/cheesecake.jpg" style="width: 100%" /></a>
+          <div class="text">Cheesecake</div>
+        </div>
+        <div class="dessertSlides fade">
+          <a href="dessert/pave.html"><img src="assets/dessert/pave.jpg" style="width: 100%" /></a>
+          <div class="text">Pavê</div>
+        </div>
+        <div class="dessertSlides fade">
+          <a href="dessert/pudim.html"><img src="assets/dessert/pudim.jpg" style="width: 100%" /></a>
+          <div class="text">Pudim</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1, 3)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 3)">&#10095;</a>
+      </div>
+      <br />
+
+      <div style="text-align: center">
+        <span class="dot dot-dessert" onclick="currentSlide(1, 3)"></span>
+        <span class="dot dot-dessert" onclick="currentSlide(2, 3)"></span>
+        <span class="dot dot-dessert" onclick="currentSlide(3, 3)"></span>
+        <span class="dot dot-dessert" onclick="currentSlide(4, 3)"></span>
+        <span class="dot dot-dessert" onclick="currentSlide(5, 3)"></span>
+        <span class="dot dot-dessert" onclick="currentSlide(6, 3)"></span>
+      </div>
+    </section>
+
+    <section id="snacks-link">
+      <div class="recipes-container">
+        <div id="snacks-recipes">
+          <h1 class="recipes-title">Snacks</h1>
+        </div>
+        <div class="snackSlides fade">
+          <a href="snacks/bruschetta.html"><img src="assets/snacks/bruschetta.jpg" style="width: 100%" /></a>
+          <div class="text">Bruschetta</div>
+        </div>
+        <div class="snackSlides fade">
+          <a href="snacks/chicken-wings.html"><img src="assets/snacks/chicken-wings.jpg" style="width: 100%" /></a>
+          <div class="text">Chicken Wings</div>
+        </div>
+        <div class="snackSlides fade">
+          <a href="snacks/coxinha.html"><img src="assets/snacks/coxinha.jpg" style="width: 100%" /></a>
+          <div class="text">Coxinha</div>
+        </div>
+        <div class="snackSlides fade">
+          <a href="snacks/deviled-eggs.html"><img src="assets/snacks/deviled-eggs.jpg" style="width: 100%" /></a>
+          <div class="text">Deviled Eggs</div>
+        </div>
+        <div class="snackSlides fade">
+          <a href="snacks/nachos.html"><img src="assets/snacks/nachos.jpg" style="width: 100%" /></a>
+          <div class="text">Nachos</div>
+        </div>
+        <div class="snackSlides fade">
+          <a href="snacks/pastel.html"><img src="assets/snacks/pastel.jpg" style="width: 100%" /></a>
+          <div class="text">Pastel</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1, 4)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 4)">&#10095;</a>
+      </div>
+      <br />
+
+      <div style="text-align: center; margin-bottom: 4%">
+        <span class="dot dot-snacks" onclick="currentSlide(1, 4)"></span>
+        <span class="dot dot-snacks" onclick="currentSlide(2, 4)"></span>
+        <span class="dot dot-snacks" onclick="currentSlide(3, 4)"></span>
+        <span class="dot dot-snacks" onclick="currentSlide(4, 4)"></span>
+        <span class="dot dot-snacks" onclick="currentSlide(5, 4)"></span>
+        <span class="dot dot-snacks" onclick="currentSlide(6, 4)"></span>
+      </div>
+    </section>
+  </main>
+
+  <div class="footer-container">
+    <div class="footer-main">
+      <h1>The Recipe Journal</h1>
+      <p style="
+              font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            ">
+        Your go-to source for delicious recipes from around the world. Whether you're a seasoned chef or a
+        home-cooking enthusiast, we've got something for everyone!
+      </p>
     </div>
 
-    <main>
-      <section id="breakfast-link">
-        <div style="margin-top: 6%" class="recipes-container">
-          <div id="breakfast-recipes">
-            <h1 class="recipes-title">Breakfast/Brunch</h1>
-          </div>
-
-          <div class="breakfastSlides fade">
-            <a href="breakfast/burrito.html"
-              ><img
-                src="assets/breakfast/breakfast-burrito.jpg"
-                style="width: 100%"
-            /></a>
-            <div class="text">Burritos</div>
-          </div>
-          <div class="breakfastSlides fade">
-            <a href="breakfast/cuscuz.html"
-              ><img src="assets/breakfast/cuscuz.jpg" style="width: 100%"
-            /></a>
-            <div class="text">Cuscuz</div>
-          </div>
-          <div class="breakfastSlides fade">
-            <a href="breakfast/french-toast.html"
-              ><img src="assets/breakfast/french-toast.jpg" style="width: 100%"
-            /></a>
-            <div class="text">French Toast</div>
-          </div>
-          <div class="breakfastSlides fade">
-            <a href="breakfast/omelette.html"
-              ><img src="assets/breakfast/omelette.jpg" style="width: 100%"
-            /></a>
-            <div class="text">Omelette</div>
-          </div>
-          <div class="breakfastSlides fade">
-            <a href="breakfast/pancakes.html"
-              ><img src="assets/breakfast/pancakes.jpg" style="width: 100%"
-            /></a>
-            <div class="text">Pancakes</div>
-          </div>
-          <div class="breakfastSlides fade">
-            <a href="breakfast/scrambled-eggs.html"
-              ><img
-                src="assets/breakfast/scrambled-eggs.jpg"
-                style="width: 100%"
-            /></a>
-            <div class="text">Scrambled Eggs</div>
-          </div>
-          <div class="breakfastSlides fade">
-            <a href="breakfast/smoothie-bowl.html"
-              ><img
-                src="assets/breakfast/smoothie-bowl.jpg"
-                style="width: 100%"
-            /></a>
-            <div class="text">Smoothie Bowl</div>
-          </div>
-          <div class="breakfastSlides fade">
-            <a href="breakfast/tapioca.html"
-              ><img src="assets/breakfast/tapioca.jpg" style="width: 100%"
-            /></a>
-            <div class="text">Tapioca</div>
-          </div>
-
-          <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
-          <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
-        </div>
-        <br />
-
-        <div style="text-align: center">
-          <span class="dot dot-breakfast" onclick="currentSlide(1, 0)"></span>
-          <span class="dot dot-breakfast" onclick="currentSlide(2, 0)"></span>
-          <span class="dot dot-breakfast" onclick="currentSlide(3, 0)"></span>
-          <span class="dot dot-breakfast" onclick="currentSlide(4, 0)"></span>
-          <span class="dot dot-breakfast" onclick="currentSlide(5, 0)"></span>
-          <span class="dot dot-breakfast" onclick="currentSlide(6, 0)"></span>
-          <span class="dot dot-breakfast" onclick="currentSlide(7, 0)"></span>
-          <span class="dot dot-breakfast" onclick="currentSlide(8, 0)"></span>
-        </div>
-      </section>
-
-      <section id="lunch-link">
-        <div class="recipes-container">
-          <div id="lunch-recipes">
-            <h1 class="recipes-title">Lunch</h1>
-          </div>
-          <div class="lunchSlides fade">
-            <a href="lunch/casserole.html"
-              ><img src="assets/lunch/casserole.jpg" style="width: 100%"
-            /></a>
-            <div class="text">Casserole</div>
-          </div>
-          <div class="lunchSlides fade">
-            <a href="lunch/ceasar-salad.html"
-              ><img src="assets/lunch/ceasar-salad.jpg" style="width: 100%"
-            /></a>
-            <div class="text">Ceasar Salad</div>
-          </div>
-          <div class="lunchSlides fade">
-            <a href="lunch/chicken-wrap.html"
-              ><img src="assets/lunch/chicken-wrap.jpg" style="width: 100%"
-            /></a>
-            <div class="text">Chicken Wrap</div>
-          </div>
-          <div class="lunchSlides fade">
-            <a href="lunch/mac-and-cheese.html"
-              ><img src="assets/lunch/mac-and-cheese.jpg" style="width: 100%"
-            /></a>
-            <div class="text">Mac n' Cheese</div>
-          </div>
-          <div class="lunchSlides fade">
-            <a href="lunch/quiche.html"
-              ><img src="assets/lunch/quiche.jpg" style="width: 100%"
-            /></a>
-            <div class="text">Quiche</div>
-          </div>
-          <div class="lunchSlides fade">
-            <a href="lunch/sandwich.html"
-              ><img src="assets/lunch/sandwich.jpg" style="width: 100%"
-            /></a>
-            <div class="text">Sandwich</div>
-          </div>
-          <div class="lunchSlides fade">
-            <a href="lunch/tomato-soup.html"
-              ><img src="assets/lunch/tomato-soup.jpg" style="width: 100%"
-            /></a>
-            <div class="text">Tomato Soup</div>
-          </div>
-          <div class="lunchSlides fade">
-            <a href="lunch/tuna-salad.html"
-              ><img src="assets/lunch/tuna-salad.jpg" style="width: 100%"
-            /></a>
-            <div class="text">Tuna Salad</div>
-          </div>
-
-          <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
-          <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
-        </div>
-        <br />
-
-        <div style="text-align: center">
-          <span class="dot dot-lunch" onclick="currentSlide(1, 1)"></span>
-          <span class="dot dot-lunch" onclick="currentSlide(2, 1)"></span>
-          <span class="dot dot-lunch" onclick="currentSlide(3, 1)"></span>
-          <span class="dot dot-lunch" onclick="currentSlide(4, 1)"></span>
-          <span class="dot dot-lunch" onclick="currentSlide(5, 1)"></span>
-          <span class="dot dot-lunch" onclick="currentSlide(6, 1)"></span>
-          <span class="dot dot-lunch" onclick="currentSlide(7, 1)"></span>
-          <span class="dot dot-lunch" onclick="currentSlide(8, 1)"></span>
-        </div>
-      </section>
-
-      <section id="dinner-link">
-        <div class="recipes-container">
-          <div id="dinner-recipes">
-            <h1 class="recipes-title">Dinner</h1>
-          </div>
-          <div class="dinnerSlides fade">
-            <a href="dinner/baked-salmon.html"
-              ><img src="assets/dinner/baked-salmon.jpg" style="width: 100%"
-            /></a>
-            <div class="text">Baked Salmon</div>
-          </div>
-          <div class="dinnerSlides fade">
-            <a href="dinner/beef-stroganoff.html"
-              ><img src="assets/dinner/beef-stroganoff.jpg" style="width: 100%"
-            /></a>
-            <div class="text">Beef Stroganoff</div>
-          </div>
-          <div class="dinnerSlides fade">
-            <a href="dinner/chicken-stroganoff.html"
-              ><img
-                src="assets/dinner/chicken-stroganoff.jpg"
-                style="width: 100%"
-            /></a>
-            <div class="text">Chicken Stroganoff</div>
-          </div>
-          <div class="dinnerSlides fade">
-            <a href="dinner/chili.html"
-              ><img src="assets/dinner/chili.jpg" style="width: 100%"
-            /></a>
-            <div class="text">Chili</div>
-          </div>
-          <div class="dinnerSlides fade">
-            <a href="dinner/feijoada.html"
-              ><img src="assets/dinner/feijoada.jpg" style="width: 100%"
-            /></a>
-            <div class="text">Feijoada</div>
-          </div>
-          <div class="dinnerSlides fade">
-            <a href="dinner/lasagna.html"
-              ><img src="assets/dinner/lasagna.jpg" style="width: 100%"
-            /></a>
-            <div class="text">Lasagna</div>
-          </div>
-          <div class="dinnerSlides fade">
-            <a href="dinner/moqueca.html"
-              ><img src="assets/dinner/moqueca.jpg" style="width: 100%"
-            /></a>
-            <div class="text">Moqueca</div>
-          </div>
-          <div class="dinnerSlides fade">
-            <a href="dinner/spaghetti.html"
-              ><img src="assets/dinner/spaghetti.jpg" style="width: 100%"
-            /></a>
-            <div class="text">Spaghetti</div>
-          </div>
-
-          <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
-          <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
-        </div>
-        <br />
-
-        <div style="text-align: center">
-          <span class="dot dot-dinner" onclick="currentSlide(1, 2)"></span>
-          <span class="dot dot-dinner" onclick="currentSlide(2, 2)"></span>
-          <span class="dot dot-dinner" onclick="currentSlide(3, 2)"></span>
-          <span class="dot dot-dinner" onclick="currentSlide(4, 2)"></span>
-          <span class="dot dot-dinner" onclick="currentSlide(5, 2)"></span>
-          <span class="dot dot-dinner" onclick="currentSlide(6, 2)"></span>
-          <span class="dot dot-dinner" onclick="currentSlide(7, 2)"></span>
-          <span class="dot dot-dinner" onclick="currentSlide(8, 2)"></span>
-        </div>
-      </section>
-
-      <section id="dessert-link">
-        <div class="recipes-container">
-          <div id="dessert-recipes">
-            <h1 class="recipes-title">Dessert</h1>
-          </div>
-          <div class="dessertSlides fade">
-            <a href="dessert/apple-pie.html"
-              ><img src="assets/dessert/apple-pie.jpg" style="width: 100%"
-            /></a>
-            <div class="text">Apple Pie</div>
-          </div>
-          <div class="dessertSlides fade">
-            <a href="dessert/brigadeiro.html"
-              ><img src="assets/dessert/brigadeiro.jpg" style="width: 100%"
-            /></a>
-            <div class="text">Brigadeiro</div>
-          </div>
-          <div class="dessertSlides fade">
-            <a href="dessert/brownie.html"
-              ><img src="assets/dessert/brownie.jpg" style="width: 100%"
-            /></a>
-            <div class="text">Brownie</div>
-          </div>
-          <div class="dessertSlides fade">
-            <a href="dessert/cheesecake.html"
-              ><img src="assets/dessert/cheesecake.jpg" style="width: 100%"
-            /></a>
-            <div class="text">Cheesecake</div>
-          </div>
-          <div class="dessertSlides fade">
-            <a href="dessert/pave.html"
-              ><img src="assets/dessert/pave.jpg" style="width: 100%"
-            /></a>
-            <div class="text">Pavê</div>
-          </div>
-          <div class="dessertSlides fade">
-            <a href="dessert/pudim.html"
-              ><img src="assets/dessert/pudim.jpg" style="width: 100%"
-            /></a>
-            <div class="text">Pudim</div>
-          </div>
-
-          <a class="prev" onclick="plusSlides(-1, 3)">&#10094;</a>
-          <a class="next" onclick="plusSlides(1, 3)">&#10095;</a>
-        </div>
-        <br />
-
-        <div style="text-align: center">
-          <span class="dot dot-dessert" onclick="currentSlide(1, 3)"></span>
-          <span class="dot dot-dessert" onclick="currentSlide(2, 3)"></span>
-          <span class="dot dot-dessert" onclick="currentSlide(3, 3)"></span>
-          <span class="dot dot-dessert" onclick="currentSlide(4, 3)"></span>
-          <span class="dot dot-dessert" onclick="currentSlide(5, 3)"></span>
-          <span class="dot dot-dessert" onclick="currentSlide(6, 3)"></span>
-        </div>
-      </section>
-
-      <section id="snacks-link">
-        <div class="recipes-container">
-          <div id="snacks-recipes">
-            <h1 class="recipes-title">Snacks</h1>
-          </div>
-          <div class="snackSlides fade">
-            <a href="snacks/bruschetta.html"
-              ><img src="assets/snacks/bruschetta.jpg" style="width: 100%"
-            /></a>
-            <div class="text">Bruschetta</div>
-          </div>
-          <div class="snackSlides fade">
-            <a href="snacks/chicken-wings.html"
-              ><img src="assets/snacks/chicken-wings.jpg" style="width: 100%"
-            /></a>
-            <div class="text">Chicken Wings</div>
-          </div>
-          <div class="snackSlides fade">
-            <a href="snacks/coxinha.html"
-              ><img src="assets/snacks/coxinha.jpg" style="width: 100%"
-            /></a>
-            <div class="text">Coxinha</div>
-          </div>
-          <div class="snackSlides fade">
-            <a href="snacks/deviled-eggs.html"
-              ><img src="assets/snacks/deviled-eggs.jpg" style="width: 100%"
-            /></a>
-            <div class="text">Deviled Eggs</div>
-          </div>
-          <div class="snackSlides fade">
-            <a href="snacks/nachos.html"
-              ><img src="assets/snacks/nachos.jpg" style="width: 100%"
-            /></a>
-            <div class="text">Nachos</div>
-          </div>
-          <div class="snackSlides fade">
-            <a href="snacks/pastel.html"
-              ><img src="assets/snacks/pastel.jpg" style="width: 100%"
-            /></a>
-            <div class="text">Pastel</div>
-          </div>
-
-          <a class="prev" onclick="plusSlides(-1, 4)">&#10094;</a>
-          <a class="next" onclick="plusSlides(1, 4)">&#10095;</a>
-        </div>
-        <br />
-
-        <div style="text-align: center; margin-bottom: 4%">
-          <span class="dot dot-snacks" onclick="currentSlide(1, 4)"></span>
-          <span class="dot dot-snacks" onclick="currentSlide(2, 4)"></span>
-          <span class="dot dot-snacks" onclick="currentSlide(3, 4)"></span>
-          <span class="dot dot-snacks" onclick="currentSlide(4, 4)"></span>
-          <span class="dot dot-snacks" onclick="currentSlide(5, 4)"></span>
-          <span class="dot dot-snacks" onclick="currentSlide(6, 4)"></span>
-        </div>
-      </section>
-    </main>
-
-    <div class="footer-container">
-      <div class="newsletter-content">
-        <div><h2 class="newsletter-title">Subscribe to our newsletter</h2></div>
-        <div>
-          <form>
-            <input type="email" placeholder="Enter email adress" />
-            <button type="submit" class="newsletter-button">Submit</button>
-          </form>
+    <div class="footer-contact">
+      <div>
+        <h3 style="margin-bottom: 0.8em;">Contact</h3>
+      </div>
+      <div class="email-contact">
+        <div><i class="fa-solid fa-envelope"></i></div>
+        <div style="margin-left: 2%">
+          <p style="
+                  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                ">
+            therecipejournal@domain.com
+          </p>
         </div>
       </div>
-
-      <div class="footer-content">
-        <div class="footer-links">
-          <h3>Follow Us</h3>
-          <div class="social-icons">
-            <i class="fa-brands fa-tiktok"></i>
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-youtube"></i>
-          </div>
-        </div>
-        <div class="footer-contact">
-          <div><h3>Contact</h3></div>
-          <div class="number-contact">
-            <div><i class="fa-solid fa-phone"></i></div>
-            <div style="margin-left: 2%"><p>+1 555 123456</p></div>
-          </div>
-          <div class="email-contact">
-            <div><i class="fa-solid fa-envelope"></i></div>
-            <div style="margin-left: 2%"><p>therecipejournal@gmail.com</p></div>
-          </div>
+      <div class="number-contact">
+        <div><i class="fa-solid fa-phone"></i></div>
+        <div style="margin-left: 2%">
+          <p style="
+                  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                ">
+            +1 555 123456
+          </p>
         </div>
       </div>
     </div>
-    <script src="script.js"></script>
-  </body>
+
+    <div class="footer-links">
+      <div>
+        <h3 style="margin-bottom: 1em;">Follow Us</h3>
+      </div>
+      <div class=" social-icons">
+        <i class="fa-brands fa-tiktok"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-youtube"></i>
+      </div>
+      <div>
+        <p class="copy" style="
+              font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin-left: 1%;
+            ">&copy; 2025 | The Recipe Journal</p>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
 </html>
