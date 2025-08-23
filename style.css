@@ -231,21 +231,26 @@ body {
 
 /* STYTLE FOOTER */
 .footer-container {
-  position: relative;
   background-color: #945656;
   color: #ece3d4;
   padding: 2% 0;
-  text-align: center;
+}
+
+form {
   display: flex;
-  flex-direction: column;
+  gap: 0;
+}
+
+form * {
+  margin: 0;
+  padding: 0;
 }
 
 .newsletter-content {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
   margin: 2% 10%;
+  gap: 14%;
 }
 
 .newsletter-title {
@@ -253,23 +258,27 @@ body {
 }
 
 .newsletter-content input {
+  flex: 1;
   padding: 0.4em 1.2em;
-  font-size: clamp(0.6rem, 2vw, 1.8rem);
-  border-radius: 5px 0 0 5px;
+  font-size: clamp(0.8rem, 2vw, 1.4rem);
   border: 2px solid #ece3d4;
-  color: #4b332d;
-  width: 52%;
+  border-right: none;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  min-width: 120%;
 }
 
 .newsletter-button {
   padding: 0.4em 1.2em;
-  font-size: clamp(0.6rem, 2vw, 1.8rem);
-  background-color: #ece3d4;
-  font-weight: 600;
-  color: #392925;
-  border-radius: 0 5px 5px 0;
+  font-size: clamp(0.8rem, 2vw, 1.4rem);
   border: 2px solid #ece3d4;
+  border-left: none;
+  border-radius: 0 5px 5px 0;
+  background-color: #ece3d4;
+  color: #392925;
+  cursor: pointer;
   transition-duration: 0.4s;
+  font-weight: 600;
 }
 
 .newsletter-button:hover {
@@ -285,15 +294,49 @@ body {
   flex-direction: row;
   align-items: left;
   text-align: left;
-  justify-content: space-between;
-  margin-top: 2%;
-  margin-bottom: 2%;
+  margin-top: 4%;
+  margin-bottom: 4%;
   margin-left: 10%;
-  margin-right: 42%;
+  margin-right: 10%;
+  gap: 28%;
 }
 
 .footer-content h3 {
-  font-size: clamp(0.6rem, 2vw, 1.8rem);
+  font-size: clamp(0.8rem, 2vw, 3rem);
+}
+
+.footer-links {
+  flex-direction: column;
+}
+
+.social-icons {
+  flex-direction: row;
+}
+
+.social-icons i {
+  font-size: clamp(0.8rem, 2vw, 3rem);
+  margin-top: 0.8em;
+  margin-right: 0.5em;
+  color: #ece3d4;
+  transition-duration: 0.4s;
+}
+
+.footer-contact {
+  flex-direction: column;
+}
+
+.number-contact,
+.email-contact {
+  font-size: clamp(0.8rem, 2vw, 3rem);
+  margin-top: 0.8em;
+  color: #ece3d4;
+  transition-duration: 0.4s;
+}
+
+.number-contact,
+.email-contact {
+  display: flex;
+  flex-direction: row;
 }
 
 /* STYLE RECIPE PAGES SECTIONINGS */

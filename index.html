@@ -11,6 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Asap+Condensed:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="fontawesome-free-7.0.0-web/css/all.css" />
   </head>
 
   <body class="main-body">
@@ -40,7 +41,9 @@
         <div class="hero-text-container">
           <h1 class="hero-title">How can we satisfy your hunger today?</h1>
           <p class="hero-subtitle">Find the right recipe for you!</p>
-          <a href="#breakfast-link"><button class="explore-button">Explore</button></a>
+          <a href="#breakfast-link"
+            ><button class="explore-button">Explore</button></a
+          >
         </div>
       </header>
     </div>
@@ -124,7 +127,7 @@
         </div>
       </section>
 
-      <section id ="lunch-link">
+      <section id="lunch-link">
         <div class="recipes-container">
           <div id="lunch-recipes">
             <h1 class="recipes-title">Lunch</h1>
@@ -387,18 +390,34 @@
       <div class="newsletter-content">
         <div><h2 class="newsletter-title">Subscribe to our newsletter</h2></div>
         <div>
-          <form class="newsletter-form">
-            <input
-              type="email"
-              placeholder="Enter your email adress"
-            />
+          <form>
+            <input type="email" placeholder="Enter email adress" />
             <button type="submit" class="newsletter-button">Submit</button>
+          </form>
         </div>
       </div>
-    
+
       <div class="footer-content">
-        <div><h3>Follow Us</h3></div>
-        <div><h3>Contact</h3></div>
+        <div class="footer-links">
+          <h3>Follow Us</h3>
+          <div class="social-icons">
+            <i class="fa-brands fa-tiktok"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-youtube"></i>
+          </div>
+        </div>
+        <div class="footer-contact">
+          <div><h3>Contact</h3></div>
+          <div class="number-contact">
+            <div><i class="fa-solid fa-phone"></i></div>
+            <div style="margin-left: 2%"><p>+1 555 123456</p></div>
+          </div>
+          <div class="email-contact">
+            <div><i class="fa-solid fa-envelope"></i></div>
+            <div style="margin-left: 2%"><p>therecipejournal@gmail.com</p></div>
+          </div>
+        </div>
       </div>
     </div>
     <script src="script.js"></script>
