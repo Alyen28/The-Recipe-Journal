@@ -174,22 +174,23 @@ body {
   cursor: pointer;
   position: absolute;
   top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
+  transform: translateY(-50%);
+  z-index: 2;
+  padding: clamp(0.5rem, 1.8vw, 1rem);
   color: white;
   font-weight: bold;
-  font-size: 18px;
+  font-size: clamp(0.8rem, 1.8vw, 1.2rem);
   transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
+  border-radius: 5px;
   user-select: none;
-  margin-left: 5.95%;
-  margin-right: 5.95%;
+}
+
+.prev {
+  left: 10.5%;
 }
 
 .next {
-  right: 4.5%;
-  border-radius: 3px 0 0 3px;
+  right: 10.5%;
 }
 
 .prev:hover,
@@ -243,6 +244,12 @@ body {
 .footer-container h3 {
   font-size: clamp(0.8rem, 2vw, 2.2rem);
   margin-bottom: 4%;
+}
+
+.footer-container0 {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
 }
 
 .footer-main {
@@ -315,6 +322,7 @@ body {
 .copy {
   margin-top: 7%;
   font-size: clamp(0.4rem, 1vw, 0.8rem);
+  margin-right: 18%;
 }
 
 /* STYLE RECIPE PAGES SECTIONINGS */
@@ -356,7 +364,7 @@ main {
   border-top: 2px solid;
   color: #945656;
   margin-right: 36%;
-  margin-top: 5%;
+  margin-top: 8%;
 }
 
 /* STYLE RECIPE PAGES TEXT */
@@ -418,6 +426,10 @@ main {
   margin-bottom: 3%;
   margin-right: 36%;
   font-size: clamp(1rem, 2.8vw, 2rem);
+}
+
+#conversor-container {
+  margin-bottom: 10%;
 }
 
 #conversor-title {
@@ -509,52 +521,71 @@ select:hover {
   .footer-container {
     padding: 4% 6%;
   }
+  .prev {
+    left: 4.6em;
+  }
+  .next {
+    right: 4.6em;
+  }
 }
 
 @media (max-width: 1000px) {
   .footer-container {
     flex-direction: column;
     gap: 32px;
-    padding: 4% 4%;
-    align-items: flex-start;
-    text-align: left;
+    padding: 6% 8%;
   }
   .footer-main,
   .footer-contact,
   .footer-links {
     max-width: 100%;
-    margin-right: 0;
-    align-items: flex-start;
-    justify-content: flex-start;
+    flex-grow: 1;
   }
   .footer-main {
     margin-bottom: 1em;
+    text-align: center;
   }
+  .footer-main h1 {
+    text-align: center;
+  }
+  .footer-container0 {
+    display: flex;
+    flex-direction: row;
+  }
+  .email-contact,
+  .number-contact {
+    gap: 1%;
+    margin: 1% 0;
+  }
+  .email-contact p,
+  .number-contact p {
+    font-size: clamp(0.8rem, 2vw, 1rem);
+  }
+
   .copy {
-    margin-top: 2em;
-    text-align: left;
+    margin-top: 1.8em;
   }
 }
 
-@media (max-width: 600px) {
-  .footer-container {
-    padding: 4% 4%;
-    gap: 20px;
-  }
-  .footer-main h1 {
-    font-size: 1.4rem;
-  }
-  .footer-main button {
+@media (max-width: 800px) {
+  img {
     width: 100%;
-    font-size: 1rem;
+    height: auto;
   }
-  .footer-main,
-  .footer-contact,
-  .footer-links {
-    font-size: 1rem;
+  .intro-subtitle {
+    margin-right: 0;
   }
-  .social-icons {
-    font-size: 1.2rem;
-    display: inline;
+  .ingredients-container li {
+    margin-right: 0;
+  }
+
+  .steps-container li {
+    margin-right: 0;
+  }
+  .solid {
+    margin-right: 0;
+  }
+  .recipes-container {
+    padding: 24px 32px;
   }
 }

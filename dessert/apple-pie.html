@@ -1,111 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="../style.css" rel="stylesheet" type="text/css" />
-    <title>The Recipe Journal</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Asap+Condensed:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body class="secondary-body">
 
-        <div class="navbar-container0">
-          <div class="left-container0">
-            <p class="left-text0">The Recipe Journal</p>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="../style.css" rel="stylesheet" type="text/css" />
+  <title>The Recipe Journal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Asap+Condensed:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="../fontawesome-free-7.0.0-web/css/all.css" />
+</head>
+
+<body class="secondary-body">
+
+  <div class="navbar-container0">
+    <div class="left-container0">
+      <p class="left-text0">The Recipe Journal</p>
+    </div>
+    <div class="right-container0" style="margin: 2% 6.8%">
+      <a class="right-text0" href="../index.html">Home</a>
+    </div>
+  </div>
+
+  <main>
+    <div class="intro-recipe">
+      <h1 class="intro-title">Apple Pie</h1>
+      <img src="../assets/dessert/apple-pie.jpg" />
+      <p class="intro-subtitle">Delicious and comforting apple pie!</p>
+    </div>
+
+    <div class="ingredients-container">
+      <h2 class="ingredients-title">Ingredients</h2>
+      <p class="ingredients-subtitle">Original recipe yields 8 servings</p>
+      <ul>
+        <li>8 small Granny Smith apples, or as needed</li>
+        <li>½ cup unsalted butter</li>
+        <li>3 tablespoons all-purpose flour</li>
+        <li>½ cup white sugar</li>
+        <li>½ cup packed brown sugar</li>
+        <li>¼ cup water</li>
+        <li>1 (9 inch) double-crust pie pastry, thawed</li>
+      </ul>
+    </div>
+
+    <div class="steps-container">
+      <h2 class="steps-title">Steps</h2>
+      <ul>
+        <li>Gather the ingredients. Preheat the oven to 425 degrees F (220 degrees C). Peel and core apples, then thinly
+          slice. Set aside.
+
+        </li>
+        <li>Melt butter in a saucepan over medium heat. Add flour and stir to form a paste; cook until fragrant, about 1
+          to 2 minutes. Add both sugars and water; bring to a boil. Reduce the heat to low and simmer for 3 to 5
+          minutes. Remove from the heat.</li>
+        <li>Press one pastry into the bottom and up the sides of a 9-inch pie pan. Roll out remaining pastry so it will
+          overhang the pie by about 1/2 inch. Cut pastry into eight 1-inch strips.</li>
+        <li>Place sliced apples into the bottom crust, forming a slight mound. Lay four pastry strips vertically and
+          evenly spaced over apples, using longer strips in the center and shorter strips at the edges.</li>
+        <li>
+          Make a lattice crust: Fold the first and third strips all the way back so they're almost falling off the pie.
+          Lay one of the unused strips perpendicularly over the second and fourth strips, then unfold the first and
+          third strips back into their original position.
+        </li>
+        <li>Fold the second and fourth vertical strips back. Lay one of the three unused strips perpendicularly over
+          top. Unfold the second and fourth strips back into their original position. Repeat Steps 6 and 7 to weave in
+          the last two strips of pastry. Fold and trim excess dough at the edges as necessary, and pinch to secure.</li>
+        <li>
+          Slowly and gently pour sugar-butter mixture over lattice crust, making sure it seeps over sliced apples. Brush
+          some onto lattice, but make sure it doesn't run off the sides.
+        </li>
+        <li>
+          Bake in the preheated oven for 15 minutes. Reduce the temperature to 350 degrees F (175 degrees C) and
+          continue baking until apples are soft, 35 to 45 minutes.
+        </li>
+        <li>Serve and enjoy!</li>
+      </ul>
+    </div>
+
+    <hr class="solid">
+
+    <section>
+      <div id="conversor-container">
+        <div id="conversor-title">
+          <h2>Conversor</h2>
+        </div>
+        <div id="conversor">
+          <div id="conversor-child">
+            <select id="fromUnit">
+              <option value="g">Grams (g)</option>
+              <option value="ml">Milliliters (ml)</option>
+              <option value="cup">Cups</option>
+              <option value="tbsp">Tablespoons (tbsp)</option>
+              <option value="tsp">Teaspoons (tsp)</option>
+              <option value="oz">Ounces (oz)</option>
+              <option value="lb">Pounds (lb)</option>
+            </select>
+            <input></input>
           </div>
-          <div class="right-container0" style="margin: 2% 6.8%">
-            <a class="right-text0" href="../index.html">Home</a>
+
+          <p>=></p>
+
+          <div id="conversor-child">
+            <select id="toUnit">
+              <option value="g">Grams (g)</option>
+              <option value="ml">Milliliters (ml)</option>
+              <option value="cup">Cups</option>
+              <option value="tbsp">Tablespoons (tbsp)</option>
+              <option value="tsp">Teaspoons (tsp)</option>
+              <option value="oz">Ounces (oz)</option>
+              <option value="lb">Pounds (lb)</option>
+            </select>
+            <input></input>
           </div>
         </div>
-
-    <main>
-      <div class="intro-recipe">
-        <h1 class="intro-title">Apple Pie</h1>
-        <img src="../assets/dessert/apple-pie.jpg"/>
-        <p class="intro-subtitle">Delicious and comforting apple pie!</p>
       </div>
+    </section>
+  </main>
 
-      <div class="ingredients-container">
-        <h2 class="ingredients-title">Ingredients</h2>
-        <p class="ingredients-subtitle">Original recipe yields 8 servings</p>
-        <ul>
-          <li>8 small Granny Smith apples, or as needed</li>
-          <li>½ cup unsalted butter</li>
-          <li>3 tablespoons all-purpose flour</li>
-          <li>½ cup white sugar</li>
-          <li>½ cup packed brown sugar</li>
-          <li>¼ cup water</li>
-          <li>1 (9 inch) double-crust pie pastry, thawed</li>
-        </ul>
-      </div>
+  <div class="footer-container">
+    <div class="footer-main">
+      <h1>The Recipe Journal</h1>
+      <p style="
+              font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            ">
+        Your go-to source for delicious recipes from around the world. Whether you're a seasoned chef or a
+        home-cooking enthusiast, we've got something for everyone!
+      </p>
+    </div>
 
-      <div class="steps-container">
-        <h2 class="steps-title">Steps</h2>
-        <ul>
-          <li>Gather the ingredients. Preheat the oven to 425 degrees F (220 degrees C). Peel and core apples, then thinly slice. Set aside.
-
-</li>
-          <li>Melt butter in a saucepan over medium heat. Add flour and stir to form a paste; cook until fragrant, about 1 to 2 minutes. Add both sugars and water; bring to a boil. Reduce the heat to low and simmer for 3 to 5 minutes. Remove from the heat.</li>
-          <li>Press one pastry into the bottom and up the sides of a 9-inch pie pan. Roll out remaining pastry so it will overhang the pie by about 1/2 inch. Cut pastry into eight 1-inch strips.</li>
-          <li>Place sliced apples into the bottom crust, forming a slight mound. Lay four pastry strips vertically and evenly spaced over apples, using longer strips in the center and shorter strips at the edges.</li>
-          <li>
-            Make a lattice crust: Fold the first and third strips all the way back so they're almost falling off the pie. Lay one of the unused strips perpendicularly over the second and fourth strips, then unfold the first and third strips back into their original position.
-          </li>
-          <li>Fold the second and fourth vertical strips back. Lay one of the three unused strips perpendicularly over top. Unfold the second and fourth strips back into their original position. Repeat Steps 6 and 7 to weave in the last two strips of pastry. Fold and trim excess dough at the edges as necessary, and pinch to secure.</li>
-          <li>
-            Slowly and gently pour sugar-butter mixture over lattice crust, making sure it seeps over sliced apples. Brush some onto lattice, but make sure it doesn't run off the sides.
-          </li>
-          <li>
-            Bake in the preheated oven for 15 minutes. Reduce the temperature to 350 degrees F (175 degrees C) and continue baking until apples are soft, 35 to 45 minutes.
-          </li>
-          <li>Serve and enjoy!</li>
-        </ul>
-      </div>
-
-      <hr class="solid">
-
-      <section>
-        <div id="conversor-container">
-          <div id="conversor-title"><h2>Conversor</h2></div>
-          <div id="conversor">
-            <div id="conversor-child">
-              <select id="fromUnit">
-                <option value="g">Grams (g)</option>
-                <option value="ml">Milliliters (ml)</option>
-                <option value="cup">Cups</option>
-                <option value="tbsp">Tablespoons (tbsp)</option>
-                <option value="tsp">Teaspoons (tsp)</option>
-                <option value="oz">Ounces (oz)</option>
-                <option value="lb">Pounds (lb)</option>
-              </select>
-              <input></input>
-            </div>
-
-            <p>=></p>
-
-            <div id="conversor-child">
-              <select id="toUnit">
-                <option value="g">Grams (g)</option>
-                <option value="ml">Milliliters (ml)</option>
-                <option value="cup">Cups</option>
-                <option value="tbsp">Tablespoons (tbsp)</option>
-                <option value="tsp">Teaspoons (tsp)</option>
-                <option value="oz">Ounces (oz)</option>
-                <option value="lb">Pounds (lb)</option>
-              </select>
-              <input></input>
-            </div>
+    <div class="footer-container0">
+      <div class="footer-contact">
+        <div>
+          <h3 style="margin-bottom: 0.8em;">Contact</h3>
+        </div>
+        <div class="email-contact">
+          <div><i class="fa-solid fa-envelope"></i></div>
+          <div>
+            <p style="
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                  ">
+              therecipejournal@domain.com
+            </p>
           </div>
         </div>
-      </section>
-    </main>
+        <div class="number-contact">
+          <div><i class="fa-solid fa-phone"></i></div>
+          <div>
+            <p style="
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                  ">
+              +1 555 123456
+            </p>
+          </div>
+        </div>
+      </div>
 
-    <footer></footer>
-    <script src="../script.js"></script>
-  </body>
+      <div class="footer-links">
+        <div>
+          <h3 style="margin-bottom: 0.8em;">Follow Us</h3>
+        </div>
+        <div class=" social-icons">
+          <i class="fa-brands fa-tiktok"></i>
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-youtube"></i>
+        </div>
+        <p class="copy" style="
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin-left: 1%;
+              ">&copy; 2025 | The Recipe Journal</p>
+      </div>
+    </div>
+  </div>
+  <script src="../script.js"></script>
+</body>
+
 </html>
