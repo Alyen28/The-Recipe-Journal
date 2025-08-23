@@ -403,7 +403,7 @@ main {
 }
 
 .ingredients-subtitle {
-  font-size: clamp(0.4rem, 2vw, 1.6rem);
+  font-size: clamp(0.4rem, 2vw, 1.4rem);
   margin-bottom: 4%;
 }
 
