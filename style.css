@@ -120,11 +120,14 @@ body {
 /* STYLE HERO IMAGE */
 #hero-container {
   position: relative;
+  overflow: hidden;
+  width: 100%;
 }
 
 .hero-image {
   width: 100%;
-  height: auto;
+  height: 100%;
+  display: block;
 }
 
 .hero-text-container {
@@ -247,7 +250,7 @@ body {
 .footer-container0 {
   display: flex;
   flex-direction: row;
-  gap: 50px;
+  gap: 64px;
 }
 
 .footer-main {
@@ -522,9 +525,6 @@ select:hover {
   .footer-main {
     max-width: 32%;
   }
-  .footer-container {
-    padding: 4% 6%;
-  }
   .prev {
     left: 4.5em;
   }
@@ -534,10 +534,51 @@ select:hover {
 }
 
 @media (max-width: 1000px) {
+  .main {
+    margin-top: 7%;
+  }
+  .left-container {
+    position: absolute;
+    top: 24%;
+    left: 26%;
+    margin: 2% 6%;
+    font-size: clamp(1rem, 5.2vw, 6rem);
+    font-weight: 600;
+    text-shadow: 2px 2px 4px black;
+  }
+  .right-container {
+    display: none;
+  }
+  #hero-container {
+    height: clamp(200px, 50vw, 490px);
+  }
+  .hero-text-container {
+    position: absolute;
+    bottom: 18%;
+    left: 4%;
+    color: #ece3d4;
+    text-shadow: 2px 2px 4px black;
+    text-align: center;
+  }
+  .hero-title {
+    font-size: clamp(1.2rem, 5.6vw, 6rem);
+  }
+  .hero-subtitle {
+    font-size: clamp(0.6rem, 4.4vw, 6rem);
+    font-weight: 400;
+    margin-top: 1%;
+  }
+  .hero-image {
+    filter: blur(6px);
+  }
+  .explore-button {
+    display: none;
+  }
   .footer-container {
     flex-direction: column;
     gap: 32px;
-    padding: 6% 8%;
+    padding: 6% 6%;
+    padding-right: 3%;
   }
   .footer-main,
   .footer-contact,
@@ -582,7 +623,6 @@ select:hover {
   .ingredients-container li {
     margin-right: 0;
   }
-
   .steps-container li {
     margin-right: 0;
   }
@@ -592,14 +632,9 @@ select:hover {
   .recipes-container {
     padding: 21px 28px;
   }
-  .explore-button {
-    display: none;
-  }
-  .hero-subtitle {
-    margin-bottom: 7%;
-  }
   .main {
     margin: 2% 8%;
+    margin-top: 8%;
   }
   .main0 {
     margin: 2% 6.5%;
