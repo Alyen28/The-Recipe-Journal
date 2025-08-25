@@ -1,79 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="../style.css" rel="stylesheet" type="text/css" />
-    <script src="../script.js"></script>
-    <title>Document</title>
-  </head>
-  <body>
-    <a href="../index.html">Home</a>
-    <h1>Franch Toast</h1>
-    <img src="../assets/breakfast/french-toast.jpg" />
-    <p>Easy and fluffy french toast with flour!</p>
-    <h2>Ingredients</h2>
-    <p>Original recipe yelds 12 servings</p>
-    <ul>
-      <li>¼ cup all-purpose flour</li>
-      <li>1 cup milk</li>
-      <li>3 large eggs</li>
-      <li>1 tablespoon white sugar</li>
-      <li>1 teaspoon vanilla extract</li>
-      <li>½ teaspoon ground cinnamon</li>
-      <li>1 pinch salt</li>
-      <li>12 thick slices bread</li>
-    </ul>
-    <h2>Steps</h2>
-    <ol>
-      <li>Gather all the ingredients.</li>
-      <li>Measure flour into a large mixing bowl. Slowly whisk in milk.</li>
-      <li>
-        Whisk in eggs, sugar, vanilla extract, cinnamon, and salt until smooth.
-      </li>
-      <li>Heat a lightly oiled griddle or frying pan over medium heat.</li>
-      <li>Meanwhile, soak bread slices in milk mixture until saturated.</li>
-      <li>
-        Working in batches, cook bread on the preheated griddle or pan until
-        golden brown on each side.
-      </li>
-      <li>Serve and enjoy!</li>
-    </ol>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="../style.css" rel="stylesheet" type="text/css" />
+  <title>The Recipe Journal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Asap+Condensed:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="../fontawesome-free-7.0.0-web/css/all.css" />
+</head>
+
+<body class="secondary-body">
+
+  <div class="navbar-container0">
+    <div class="left-container0">
+      <p class="left-text0">The Recipe Journal</p>
+    </div>
+    <div class="right-container0" style="margin: 2% 6.8%">
+      <a class="right-text0" href="../index.html">Home</a>
+    </div>
+  </div>
+
+  <main class="main0">
+    <div class="intro-recipe">
+      <h1 class="intro-title">French Toast</h1>
+      <img class="recipe-page-img" src="../assets/breakfast/french-toast.jpg" />
+      <p class="intro-subtitle">Delicious and fluffy french toasts!</p>
+    </div>
+
+    <div class="ingredients-container">
+      <h2 class="ingredients-title">Ingredients</h2>
+      <p class="ingredients-subtitle" style=" 
+              font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            ">Original recipe yields 12 servings</p>
+      <ul>
+        <li>¼ cup all-purpose flour</li>
+        <li>1 cup milk</li>
+        <li>3 large eggs</li>
+        <li>1 tablespoon white sugar</li>
+        <li>1 teaspoon vanilla extract</li>
+        <li>½ teaspoon ground cinnamon</li>
+        <li>1 pinch salt</li>
+        <li>12 thick slices bread</li>
+      </ul>
+    </div>
+
+    <div class="steps-container">
+      <h2 class="steps-title">Steps</h2>
+      <ul>
+        <li>Gather all ingredients.</li>
+        <li>Measure flour into a large mixing bowl. Slowly whisk in milk. Whisk in eggs, sugar, vanilla extract,
+          cinnamon, and salt until smooth.</li>
+        <li>Heat a lightly oiled griddle or frying pan over medium heat. Meanwhile, soak bread slices in milk mixture
+          until saturated.</li>
+        <li>Working in batches, cook bread on the preheated griddle or pan until golden brown on each side.</li>
+        <li>Serve hot and enjoy!</li>
+      </ul>
+    </div>
+
+    <hr class="solid">
 
     <section>
       <div id="conversor-container">
-        <h1 class="recipes-title">Conversor</h1>
-      </div>
-      <div id="conversor">
-        <div id="conversor-child">
-          <label for="fromUnit">From:</label>
-          <select id="fromUnit">
-            <option value="g">Grams (g)</option>
-            <option value="ml">Milliliters (ml)</option>
-            <option value="cup">Cups</option>
-            <option value="tbsp">Tablespoons (tbsp)</option>
-            <option value="tsp">Teaspoons (tsp)</option>
-            <option value="oz">Ounces (oz)</option>
-            <option value="lb">Pounds (lb)</option>
-          </select>
+        <div id="conversor-title">
+          <h2>Conversor</h2>
         </div>
+        <div id="conversor">
+          <div id="conversor-child">
+            <select id="fromUnit">
+              <option value="g">Grams (g)</option>
+              <option value="ml">Milliliters (ml)</option>
+              <option value="cup">Cups</option>
+              <option value="tbsp">Tablespoons (tbsp)</option>
+              <option value="tsp">Teaspoons (tsp)</option>
+              <option value="oz">Ounces (oz)</option>
+              <option value="lb">Pounds (lb)</option>
+            </select>
+            <input></input>
+          </div>
 
-        <div id="conversor-child">
-          <label for="toUnit">To:</label>
-          <select id="toUnit">
-            <option value="g">Grams (g)</option>
-            <option value="ml">Milliliters (ml)</option>
-            <option value="cup">Cups</option>
-            <option value="tbsp">Tablespoons (tbsp)</option>
-            <option value="tsp">Teaspoons (tsp)</option>
-            <option value="oz">Ounces (oz)</option>
-            <option value="lb">Pounds (lb)</option>
-          </select>
+          <p>=></p>
+
+          <div id="conversor-child">
+            <select id="toUnit">
+              <option value="g">Grams (g)</option>
+              <option value="ml">Milliliters (ml)</option>
+              <option value="cup">Cups</option>
+              <option value="tbsp">Tablespoons (tbsp)</option>
+              <option value="tsp">Teaspoons (tsp)</option>
+              <option value="oz">Ounces (oz)</option>
+              <option value="lb">Pounds (lb)</option>
+            </select>
+            <input></input>
+          </div>
         </div>
-      </div>
-      <div id="conversor-result">
-        <h2 style="color: #392925">Result:</h2>
       </div>
     </section>
-  </body>
+  </main>
+
+  <div class="footer-container">
+    <div class="footer-main">
+      <h1>The Recipe Journal</h1>
+      <p style="
+              font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            ">
+        Your go-to source for delicious recipes from around the world. Whether you're a seasoned chef or a
+        home-cooking enthusiast, we've got something for everyone!
+      </p>
+    </div>
+
+    <div class="footer-container0">
+      <div class="footer-contact">
+        <div>
+          <h3 style="margin-bottom: 0.8em;">Contact</h3>
+        </div>
+        <div class="email-contact">
+          <div><i class="fa-solid fa-envelope"></i></div>
+          <div>
+            <p style="
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                  ">
+              therecipejournal@domain.com
+            </p>
+          </div>
+        </div>
+        <div class="number-contact">
+          <div><i class="fa-solid fa-phone"></i></div>
+          <div>
+            <p style="
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                  ">
+              +1 555 123456
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <div>
+          <h3 style="margin-bottom: 0.8em;">Follow Us</h3>
+        </div>
+        <div class=" social-icons">
+          <i class="fa-brands fa-tiktok"></i>
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-youtube"></i>
+        </div>
+        <p class="copy" style="
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin-left: 1%;
+              ">&copy; 2025 | The Recipe Journal</p>
+      </div>
+    </div>
+  </div>
+  <script src="../script.js"></script>
+</body>
+
 </html>

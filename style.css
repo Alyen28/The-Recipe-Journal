@@ -569,7 +569,7 @@ select:hover {
     margin-top: 1%;
   }
   .hero-image {
-    filter: blur(6px);
+    filter: blur(5px);
   }
   .explore-button {
     display: none;
