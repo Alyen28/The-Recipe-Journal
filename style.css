@@ -13,9 +13,8 @@ body {
   background-color: #4b332d;
 }
 
-.secondary-body {
-  background-color: #ece3d4;
-  color: #392925;
+.main {
+  margin: 2% 10%;
 }
 
 #breakfast-recipes,
@@ -33,13 +32,12 @@ body {
 .recipes-container {
   max-width: 1000px;
   position: relative;
-  margin: auto;
   max-width: 800px;
   margin: 0 auto;
   padding: 30px 40px;
   background-color: #ece3d4;
   border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
   margin-top: 3%;
 }
 
@@ -326,7 +324,12 @@ body {
 }
 
 /* STYLE RECIPE PAGES SECTIONINGS */
-main {
+.secondary-body {
+  background-color: #ece3d4;
+  color: #392925;
+}
+
+.main0 {
   margin: 2% 10%;
 }
 
@@ -523,10 +526,10 @@ select:hover {
     padding: 4% 6%;
   }
   .prev {
-    left: 4.6em;
+    left: 4.5em;
   }
   .next {
-    right: 4.6em;
+    right: 4.5em;
   }
 }
 
@@ -587,6 +590,18 @@ select:hover {
     margin-right: 0;
   }
   .recipes-container {
-    padding: 24px 32px;
+    padding: 21px 28px;
+  }
+  .explore-button {
+    display: none;
+  }
+  .hero-subtitle {
+    margin-bottom: 7%;
+  }
+  .main {
+    margin: 2% 8%;
+  }
+  .main0 {
+    margin: 2% 6.5%;
   }
 }
