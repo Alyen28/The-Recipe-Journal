@@ -50,13 +50,13 @@ body {
   text-align: center;
   justify-content: center;
   background-color: #945656;
-  font-size: clamp(0.8rem, 2vw, 1.8rem);
+  font-size: clamp(1rem, 2vw, 1.8rem);
   margin-bottom: 3%;
   padding: 8px 0;
 }
 
 .recipes-title {
-  font-size: clamp(1.2rem, 4vw, 2.8rem);
+  font-size: clamp(1.6rem, 4vw, 2.8rem);
   color: #392925;
   text-align: center;
   margin-bottom: 2%;
@@ -243,7 +243,7 @@ body {
 }
 
 .footer-container h3 {
-  font-size: clamp(0.8rem, 2vw, 2.2rem);
+  font-size: clamp(0.8rem, 2vw, 2rem);
   margin-bottom: 4%;
 }
 
@@ -263,7 +263,7 @@ body {
 }
 
 .footer-main h1 {
-  font-size: clamp(1rem, 2vw, 3rem);
+  font-size: clamp(1rem, 3vw, 2.2rem);
   margin-bottom: 0.6em;
 }
 
@@ -303,7 +303,7 @@ body {
 }
 
 .social-icons {
-  font-size: clamp(1.2rem, 2vw, 1.4rem);
+  font-size: clamp(1.1rem, 2vw, 1.4rem);
   transition-duration: 0.4s;
   flex-wrap: nowrap;
 }
@@ -386,7 +386,7 @@ body {
 }
 
 .intro-title {
-  font-size: clamp(1.6rem, 4.4vw, 4rem);
+  font-size: clamp(2rem, 4.4vw, 4rem);
   color: #392925;
   text-align: left;
   margin-bottom: 2%;
@@ -403,13 +403,13 @@ body {
 }
 
 .ingredients-title {
-  font-size: clamp(1.2rem, 4vw, 3.2rem);
+  font-size: clamp(1.4rem, 3.6vw, 3.2rem);
   margin-top: 6%;
   color: #392925;
 }
 
 .ingredients-subtitle {
-  font-size: clamp(0.4rem, 2vw, 1.4rem);
+  font-size: clamp(0.7rem, 1.4vw, 1.4rem);
   margin-bottom: 4%;
 }
 
@@ -417,11 +417,11 @@ body {
   margin-left: 4%;
   margin-bottom: 3%;
   margin-right: 36%;
-  font-size: clamp(1rem, 2.8vw, 2rem);
+  font-size: clamp(1rem, 2.8vw, 2.2rem);
 }
 
 .steps-title {
-  font-size: clamp(1.2rem, 4vw, 3.2rem);
+  font-size: clamp(1.4rem, 3.6vw, 3.2rem);
   margin-bottom: 4%;
   margin-top: 6%;
   color: #392925;
@@ -431,7 +431,7 @@ body {
   margin-left: 4%;
   margin-bottom: 3%;
   margin-right: 36%;
-  font-size: clamp(1rem, 2.8vw, 2rem);
+  font-size: clamp(1rem, 2.8vw, 2.2rem);
 }
 
 #conversor-container {
@@ -439,7 +439,7 @@ body {
 }
 
 #conversor-title {
-  font-size: clamp(1rem, 3vw, 2.4rem);
+  font-size: clamp(1.2rem, 3vw, 2.8rem);
   margin-top: 6%;
   margin-bottom: 4%;
   color: #392925;
