@@ -17,6 +17,7 @@ Front-end project simulating a basic recipe website
 - Improve scalability (avoid hardcoding each recipe)
 - Add backend + JavaScript for newsletter page
 - Optimize performance (reduce image/icon load time)
+- Improve and expand unit conversor
 
 ## 🙌 Acknowledgments
 
