@@ -51,6 +51,7 @@ function currentSlide(n, no) {
   showSlides((slideIndices[no] = n), no);
 }
 
+// Conversor
 const volumeFactors = {
   ml: 1,
   cup: 240,
